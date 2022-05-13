@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+
+    <!-- custome css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Media css  -->
+    <link rel="stylesheet" href="assets/css/media.css">
+
+    <title>Blood Oyala - News Feed</title>
+  </head>
+  <body class="">
+    <!------- main nav bar start  ------>
+    <section class="">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="assets/images/logo/blood-oyala-logo2.png" alt="Blood Oyala" width="50"></a>
+
+          <div class="" id="navbarSupportedContent">
+            <ul class="navbar-nav custome-navbar-nav m-auto">
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="index.html" title="Home"><i class="fas fa-home"></i> <span>Home</span></a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="newsfeed.html"><i class="fas fa-newspaper"></i> <span>News Feed</span></a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="groups.html" title="Groups"><i class="fas fa-users"></i> <span>Groups</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="donor-list.html" title="Donor List"><i class="fas fa-list"></i> <span>Donor List</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="brequest.html" title="Blood Request"><img src="assets/images/logo/donate.png" alt="icon" width="20px"> <span>Blood Request</span></a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="#"><i class="fas fa-user"></i> <span>Profile</span></a>
+              </li> -->
+
+            </ul>
+          </div>
+
+
+          <div class="d-flex">
+            <button class="d-lg-none d-md-none btn btn-outline-light" onclick="sidebar1()"><i class="fas fa-bars"></i></button>
+            <div class="dropdown ps-2">
+              <div class="Profile d-flex text-light dropdown-toggle" id="profiledropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="avater"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" width="55"></div>
+                  <p class="name pt-1 m-2">Blood Oyala</p>
+                </div>
+                <ul class="dropdown-menu dropdown-menu2" aria-labelledby="profiledropdown">
+                  <li><a class="dropdown-item text-white" href="#">My Profile</a></li>
+                  <li><a class="dropdown-item text-white" href="#">Another action</a></li>
+                  <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
+                </ul>
+            </div>
+          </div>
+
+            <ul class="navbar-nav custome-navbar-nav1 m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link text-light" aria-current="page" href="index.html" title="Home"><i class="fas fa-home"></i> <span>Home</span></a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link text-light" aria-current="page" href="newsfeed.html"><i class="fas fa-newspaper"></i> <span>News Feed</span></a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link text-light" aria-current="page" href="groups.html" title="Groups"><i class="fas fa-users"></i> <span>Groups</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" aria-current="page" href="donor-list.html" title="Donate List"><i class="fas fa-list"></i> <span>Blood Donate</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" aria-current="page" href="bloodrequest.html"><img src="assets/images/logo/donate.png" alt="icon" width="30px"> <span>Blood Request</span></a>
+                </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="#"><i class="fas fa-user"></i> <span>Profile</span></a>
+              </li> -->
+
+            </ul>
+        </div>
+
+      </nav>
+
+    </section>
+
+
+    <section class="main">
+      <div class="banner-area">
+        <div class="d-lg-none d-md-none d-block p-4 post-top"></div>
+        <div class="search-filter mt-5">
+          <h1 class="text-light text-center pt-5">জীবনের জন্য রক্ত</h1>
+          <h5 class="text-light text-center pt-3">আপনার কাছাকাছি রক্তদাতা খুঁজুন</h5>
+          <form action="" class="pt-5 pb-5">
+            <div class="row justify-content-center">
+              <!--Division Section-->
+              <div class="col-lg-5 col-md-8 col-8 m-2">
+                  <!-- <label for="divisions" class="form-label text-light">Select Division</label> -->
+                  <select name="divisions" id="divisions" class="form-select col-8" onchange="divisionsList();">
+                        <option disabled selected>Select Division</option>
+                        <option value="Barishal">Barishal</option>
+                        <option value="Chattogram">Chattogram</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Khulna">Khulna</option>
+                        <option value="Mymensingh">Mymensingh</option>
+                        <option value="Rajshahi">Rajshahi</option>
+                        <option value="Rangpur">Rangpur</option>
+                        <option value="Sylhet">Sylhet</option>
+                  </select>
+              </div>
+              <!--/ Division Section-->
+              <!--Districts Section-->
+              <div class="col-lg-5 col-md-8 col-8 m-2">
+                    <!-- <label for="distr">Select District</label> -->
+                  <select name="" id="distr" onchange="thanaList();" class="form-select col-6 col-md-10 col-lg-6">
+                    <option value="">Select An Option</option>
+                  </select><!--/ Districts Section-->
+              </div>
+              <!--Upzilla Section-->
+              <div class="col-lg-5 col-md-8 col-8 m-2">
+                  <!-- <label for="polic_sta">Select Police Station</label> -->
+                  <select name="" id="polic_sta" class="form-select col-12 col-md-10 col-lg-6">
+                    <option value="">Select An Option</option>
+                  </select>
+              </div>
+              <!--/ Upzilla Section-->
+              <div class="col-lg-5 col-md-8 col-8 m-2">
+                  <select class="form-select col-12 col-md-10 col-lg-6">
+                      <!-- <option value="">Select Blood Group</option> -->
+                      <option value="A+">A+</option>
+                      <option value="A-">A-</option>
+                      <option value="B+">B+</option>
+                      <option value="B-">B-</option>
+                      <option value="O+">O+</option>
+                      <option value="O-">O-</option>
+                      <option value="AB+">AB+</option>
+                      <option value="AB-">AB-</option>
+                    </select>
+              </div>
+              <button class="btn btn-outline-light col-lg-2 col-md-3 col-4" type="submit"><i class="fas fa-search"></i> অনুরোধ করুন </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!------- main nav bar end  ------>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/4e207534e4.js" crossorigin="anonymous"></script>
+    <script src="assets/js/city.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+
+    </script>
+
+  </body>
+</html>
+

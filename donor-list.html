@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+
+    <!-- custome css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Media css  -->
+    <link rel="stylesheet" href="assets/css/media.css">
+
+    <title>Blood Oyala - News Feed</title>
+  </head>
+  <body class="bg-dark">
+    <!------- main nav bar start  ------>
+    <section class="">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="assets/images/logo/blood-oyala-logo2.png" alt="Blood Oyala" width="50"></a>
+
+          <div class="" id="navbarSupportedContent">
+            <ul class="navbar-nav custome-navbar-nav m-auto">
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="index.html" title="Home"><i class="fas fa-home"></i> <span>Home</span></a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="newsfeed.html"><i class="fas fa-newspaper"></i> <span>News Feed</span></a>
+              </li> -->
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="groups.html" title="Groups"><i class="fas fa-users"></i> <span>Groups</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="donor-list.html" title="Donor List"><i class="fas fa-list"></i> <span>Donate List</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="brequest.html" title="Blood Request"><img src="assets/images/logo/donate.png" alt="icon" width="20px"> <span>Blood Request</span></a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="#"><i class="fas fa-user"></i> <span>Profile</span></a>
+              </li> -->
+
+            </ul>
+          </div>
+
+
+          <div class="d-flex">
+            <button class="d-lg-none d-md-none text-light" onclick="sidebar1()" style="border: none; background: transparent;"><i class="fas fa-bars"></i></button>
+            <div class="dropdown ps-2">
+              <div class="Profile d-flex text-light dropdown-toggle" id="profiledropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <div class="avater"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" width="55"></div>
+                  <p class="name pt-1 m-2">Blood Oyala</p>
+                </div>
+                <ul class="dropdown-menu dropdown-menu2" aria-labelledby="profiledropdown">
+                  <li><a class="dropdown-item text-white" href="#">My Profile</a></li>
+                  <li><a class="dropdown-item text-white" href="#">Another action</a></li>
+                  <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
+                </ul>
+            </div>
+          </div>
+
+            <ul class="navbar-nav custome-navbar-nav1 m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link text-light" aria-current="page" href="index.html" title="Home"><i class="fas fa-home"></i> <span>Home</span></a>
+                </li>
+                <!-- <li class="nav-item">
+                  <a class="nav-link text-light" aria-current="page" href="newsfeed.html"><i class="fas fa-newspaper"></i> <span>News Feed</span></a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link text-light" aria-current="page" href="groups.html" title="Groups"><i class="fas fa-users"></i> <span>Groups</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" aria-current="page" href="donor-list.html" title="Donor List"><i class="fas fa-list"></i> <span>Donor List</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" aria-current="page" href="bloodrequest.html"><img src="assets/images/logo/donate.png" alt="icon" width="30px"> <span>Blood Request</span></a>
+                </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link text-light" aria-current="page" href="#"><i class="fas fa-user"></i> <span>Profile</span></a>
+              </li> -->
+
+            </ul>
+        </div>
+
+      </nav>
+
+    </section>
+
+
+    <!------- main nav bar end  ------>
+
+    <section>
+      <div class="row">
+        <div class="col-lg-8 col-md-7 col-11 m-auto pt-5 mt-5">
+          <div class="d-lg-none d-md-none d-none p-4 post-top"></div>
+          <div class="post group d-flex p-2 mb-2 ms-2 me-2">
+            <div class="info">
+              <a href="#" class="d-flex post-profile group-profile">
+                <div class="post-avater group-avater">
+                  <img src="assets/images/logo/blood-oyala-logo2.png" alt="..." width="50">
+                </div>
+                <div class="post-profile-info group-info">
+                  <p class="profile-name group-name">Blood Oyala</p>
+                </div>
+              </a>
+              <div class="post-profile-info group-info ms-5 ps-3">
+                <p class="group-dec text-secondary d-flex p-0 m-0"><span style="width: 120px;">Location:</span> <span class="location text-light">Thakurgaon</span>.</p>
+                  <p class="group-dec text-secondary d-flex p-0 m-0"><span style="width: 120px;">Blood Group: </span> <span class="blood-group text-light">O+</span>.</p>
+                  <p class="group-dec text-secondary d-flex p-0 m-0"><span style="width: 120px;">Phone Number: </span> <span class="number text-light">+8801310186926</span>.</p>
+                  <p class="group-dec text-secondary d-flex"><span style="width: 120px;">Last Donate: </span> <span class="donate-date text-light">22-04-22</span>.</p>
+              </div>
+            </div>
+            <div class="contact ms-auto">
+              <a href="tel:+8801310186926" class="btn btn-info rounded-circle ms-auto p-2 m-1" style="height: 50px; width: 50px; font-size: 22px;"><i class="fas fa-phone"></i></a>
+            <button class="btn btn-info rounded-circle ms-auto" style="height: 50px; width: 50px; font-size: 24px;"><i class="fas fa-comment"></i></button>
+            </div>
+          </div>
+          <div class="post group d-flex p-2 mb-2 ms-2 me-2">
+            <div class="info">
+              <a href="#" class="d-flex post-profile group-profile">
+                <div class="post-avater group-avater">
+                  <img src="assets/images/logo/blood-oyala-logo2.png" alt="..." width="50">
+                </div>
+                <div class="post-profile-info group-info">
+                  <p class="profile-name group-name">Blood Oyala</p>
+                </div>
+              </a>
+              <div class="post-profile-info group-info ms-5 ps-3">
+                <p class="group-dec text-secondary d-flex p-0 m-0"><span style="width: 120px;">Location:</span> <span class="location text-light">Thakurgaon</span>.</p>
+                  <p class="group-dec text-secondary d-flex p-0 m-0"><span style="width: 120px;">Blood Group: </span> <span class="blood-group text-light">O+</span>.</p>
+                  <p class="group-dec text-secondary d-flex p-0 m-0"><span style="width: 120px;">Phone Number: </span> <span class="number text-light">+8801310186926</span>.</p>
+                  <p class="group-dec text-secondary d-flex"><span style="width: 120px;">Last Donate: </span> <span class="donate-date text-light">22-04-22</span>.</p>
+              </div>
+            </div>
+            <div class="contact ms-auto">
+              <a href="tel:+8801310186926" class="btn btn-info rounded-circle ms-auto p-2 m-1" style="height: 50px; width: 50px; font-size: 22px;"><i class="fas fa-phone"></i></a>
+            <button class="btn btn-info rounded-circle ms-auto" style="height: 50px; width: 50px; font-size: 24px;"><i class="fas fa-comment"></i></button>
+            </div>
+          </div>
+          <div class="post group d-flex p-2 mb-2 ms-2 me-2">
+            <div class="info">
+              <a href="#" class="d-flex post-profile group-profile">
+                <div class="post-avater group-avater">
+                  <img src="assets/images/logo/blood-oyala-logo2.png" alt="..." width="50">
+                </div>
+                <div class="post-profile-info group-info">
+                  <p class="profile-name group-name">Blood Oyala</p>
+                </div>
+              </a>
+              <div class="post-profile-info group-info ms-5 ps-3">
+                <p class="group-dec text-secondary d-flex p-0 m-0"><span style="width: 120px;">Location:</span> <span class="location text-light">Thakurgaon</span>.</p>
+                  <p class="group-dec text-secondary p-0 m-0"><span style="width: 120px;">Blood Group: </span> <span class="blood-group text-light">O+</span>.</p>
+                  <p class="group-dec text-secondary"><span style="width: 120px;">Phone Number: </span> <span class="blood-group text-light">+8801310186926</span>.</p>
+                  <p class="group-dec text-secondary d-flex"><span style="width: 120px;">Last Donate: </span> <span class="donate-date text-light">22-04-22</span>.</p>
+              </div>
+            </div>
+            <div class="contact ms-auto">
+              <a href="tel:+8801310186926" class="btn btn-info rounded-circle ms-auto p-2 m-1" style="height: 50px; width: 50px; font-size: 22px;"><i class="fas fa-phone"></i></a>
+            <button class="btn btn-info rounded-circle ms-auto" style="height: 50px; width: 50px; font-size: 24px;"><i class="fas fa-comment"></i></button>
+            </div>
+          </div>
+          <div class="more-donors m-auto text-center">
+            <button class="btn btn-danger">Pay for More Donors</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/4e207534e4.js" crossorigin="anonymous"></script>
+    <script src="assets/js/city.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+
+    </script>
+
+  </body>
+</html>
