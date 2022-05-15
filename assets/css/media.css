@@ -57,6 +57,18 @@
     .call-box .top-subtitle{
         padding-left: 10px;
     }
+    .requests, .request-form{
+        margin-top: -60;
+    }
+    .requests{
+        margin-bottom: 80px;
+    }
+    .blood-request div .requests .card .title, .request-form .card .title{
+        font-size: 20px;
+    }
+    .subscribe .form-group .button{
+        margin-left: 0;
+    }
 }
 /*Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
@@ -84,7 +96,15 @@
     .process-row2{
         display: block;
     }
-
+    .requests, .request-form{
+        margin-top: -60;
+    }
+    .requests{
+        margin-bottom: 80px;
+    }
+    .blood-request div .requests .card .title, .request-form .card .title{
+        font-size: 25px;
+    }
 }
 
 /*Medium devices (tablets, 768px and up)*/
@@ -104,7 +124,15 @@
     .process-row2{
         display: block;
     }
-
+    .requests, .request-form{
+        margin-top: -60;
+    }
+    .requests{
+        margin-bottom: 80px;
+    }
+    .blood-request div .requests .card .title, .request-form .card .title{
+        font-size: 30px;
+    }
 }
 
 /*Large devices (desktops, 992px and up)*/

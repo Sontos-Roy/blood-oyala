@@ -86,6 +86,9 @@
 .bg-white{
     background-color: var(--white) !important;
 }
+.bg{
+    background-color: var(--bg) !important;
+}
 .font-sm{
     font-size: 14px;
 }
@@ -968,3 +971,303 @@ body {
         transition: all 0.3s linear;
     }
 /* gallery section end  */
+
+/* blood owner section start  */
+.video-sec{
+    background-image: url(../images/banner/slider1.jpg);
+    background-size: cover;
+    background-position: center;
+    min-height: 350px;
+}
+.video-sec .overlay{
+    padding-top: 30px;
+    width: 100%;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.815);
+}
+.video-sec .overlay .play{
+    width: 50px;
+    height: 50px;
+    padding: 12px;
+    border-radius: 50%;
+    padding-left: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.play {
+        border: 5px solid transparent;
+        box-sizing: border-box;
+        /* width: 33.33%; */
+        position: relative;
+        line-height: 0;
+    }
+
+    /* The hover effect
+    -------------------------------------------------------------- */
+    .play:before {
+    transition: all .5s ease;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background: rgb(253, 253, 253); */
+    transform: scale(0);
+    border-radius: 50%;
+    }
+    .paly:hover:before {
+    opacity: .5;
+    transform: scale(1);
+    }
+    .play:after {
+    transition: all .6s ease .2s;
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border: 2px solid rgb(252, 252, 252);
+    background: rgba(73, 73, 73, 0.575);
+    opacity: 0;
+    transform: scale(0);
+    border-radius: 50%;
+    }
+    .play:hover:after {
+    opacity: .35;
+    transform: scale(2.5);
+    border-radius: 50%;
+    }
+    .requests, .request-form{
+        margin-top: -70px;
+    }
+    .blood-request div .requests .card .title, .request-form .card .title{
+        font-size: 30px;
+    }
+    .request-row{
+        border: 1px 0 1px 0 solid black !important;
+        cursor: pointer !important;
+        /* background-color: var(--black) !important; */
+        padding: 5px 0 5px 0;
+        transform: scale(1);
+        transition: all 0.5s ease;
+    }
+    .request-row:hover{
+        background-color: rgba(0, 0, 0, 0.137);
+        color: white;
+        transition: all 0.5s ease;
+        transform: scale(1.06);
+    }
+    .request span{
+        font-family: var(--josefin-reg);
+        opacity: 1;
+        font-style: italic;
+    }
+    .requests .card, .request-form .card{
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .request-form .card{
+        max-height: 430px;
+    }
+    .blood-requests{
+        max-height: 355px;
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+    .blood-requests::-webkit-scrollbar, .request-form .card::-webkit-scrollbar{
+        background: transparent;
+    }
+    .appointment div div input{
+        font-family: var(--josefin-reg);
+    }
+    .appointment div div input::placeholder{
+        font-family: var(--josefin-reg);
+    }
+    .appointment div div input:focus-visible,.appointment div div textarea:focus-visible{
+        /* border: 1px solid red !important; */
+        outline: 0;
+    }
+    .appointment div div select{
+        font-family: var(--josefin-reg);
+
+    }
+    .appointment div div select:focus-visible{
+        outline: 0;
+    }
+/* blood owner section end  */
+
+/* blog section start  */
+.news{
+    background-color: var(--white);
+}
+.blog:hover{
+    cursor: pointer;
+}
+.blog .top-img{
+    position: relative;
+    width: 100%;
+}
+.blog .top-img {
+        border: 5px solid transparent;
+        box-sizing: border-box;
+        /* width: 33.33%; */
+        float: left;
+        position: relative;
+        cursor: pointer;
+    }
+    .blog .top-img img {
+        vertical-align: middle;
+    }
+
+    /* Image Placeholder Styles
+    -------------------------------------------------------------- */
+    .blog .top-img:before,
+    .blog .top-img:after {
+    /* padding-top: 33.33%; */
+    content: "";
+    display: block;
+    }
+    .blog .top-img {
+    /* background: #222; */
+    /* box-shadow: 0 0 0 8px #222 inset, 0 0 0 9px #333 inset; */
+    color: #444;
+    line-height: 0;
+    text-align: center;
+    display: block;
+    }
+    .blog .top-img img {
+        max-width: 100%;
+        vertical-align: middle;
+    }
+
+
+    /* The hover effect
+    -------------------------------------------------------------- */
+    .blog .top-img:before {
+    transition: all .5s ease;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #333;
+    transform: scale(0);
+    }
+    .blog:hover .top-img:before {
+    opacity: .5;
+    transform: scale(1);
+    }
+    .blog .top-img:after {
+    transition: all .6s ease .2s;
+    content: "";
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    border: 1px solid #aaa;
+    background: #000;
+    opacity: 0;
+    transform: scale(0);
+    }
+    .blog:hover .top-img:after {
+    opacity: .35;
+    transform: scale(1);
+    }
+    .blog .top-img .icon{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        padding: 6px;
+        box-shadow: 0 0 10px var(--white);
+        background: green;
+        position: absolute;
+        top: 46%;
+        left: 46%;
+        z-index: 99;
+        opacity: 0;
+        transition: all 0.3s linear;
+    }
+    .blog:hover .top-img .icon{
+        opacity: 1;
+        transition: all 0.3s linear;
+        color: var(--white);
+    }
+
+.blog .card-body .card-title{
+    font-size: 25px;
+}
+/* blog section end  */
+
+/* footer section start  */
+.footer{
+    background-image: url(../images/banner/world-map.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer .opacity{
+    background-color: #f6f6f6ad;
+}
+.f-about-us h3{
+    font-family: var(--josefin-reg);
+    font-weight: 700;
+}
+.f-about-us .des, .f-about-us .contact-info{
+    font-family: var(--josefin-reg);
+}
+.f-quick-link h3{
+    font-family: var(--josefin-reg);
+    font-weight: 700;
+}
+.f-quick-link .tag-list div div .tag{
+    padding: 5px 0 5px 0;
+}
+.font-sm-f{
+    font-size: 14px;
+}
+.subscribe .form-group input{
+    font-family: var(--josefin-reg);
+    box-shadow: 0 0 10px rgb(196, 196, 196) !important;
+    border: 1px solid rgb(156, 156, 156);
+}
+.subscribe .form-group input::placeholder{
+    font-family: var(--josefin-reg);
+}
+.subscribe .form-group input:focus-visible{
+    /* border: 1px solid red !important; */
+    outline: 0;
+}
+.subscribe .title{
+    font-size: 20px;
+}
+.subscribe .form-group .button{
+    font-family: var(--josefin-reg);
+    margin-left: -5px;
+}
+
+.social-follow{
+    font-family: var(--josefin-reg);
+    font-weight: 700;
+}
+.social-follow .social-btn a{
+    color: var(--white);
+    background: var(--red);
+    transition: all 0.3s ease;
+    margin-left: 10px;
+    padding: 15px 20px;
+}
+.social-follow .social-btn a div{
+    height: 20px;
+    width: 20px;
+}
+.social-follow .social-btn a:hover{
+    color: red;
+    background: var(--white);
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px black;
+}
+/* footer section end  */
