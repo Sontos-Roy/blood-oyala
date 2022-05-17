@@ -1271,3 +1271,101 @@ body {
     box-shadow: 0 0 10px black;
 }
 /* footer section end  */
+
+
+/* ------------------- news feed section start ------------------- */
+.post-box form .post-details{
+    border: none;
+}
+.input-file-container {
+    position: relative;
+    width: 150px;
+  }
+  .js .input-file-trigger {
+    padding: 10px;
+    background: var(--red);
+    color: #fff;
+    font-size: 1em;
+    transition: all .4s;
+    cursor: pointer;
+  }
+  .js .input-file {
+    position: absolute;
+    top: 0; left: 0;
+    opacity: 0;
+    padding: 14px 0;
+    cursor: pointer;
+    width: 130px;
+  }
+  .js .input-file:hover + .input-file-trigger,
+  .js .input-file:focus + .input-file-trigger,
+  .js .input-file-trigger:hover,
+  .js .input-file-trigger:focus {
+    background: #34495E;
+    color: #39D2B4;
+    cursor: pointer;
+  }
+
+  .file-return {
+    margin: 0;
+  }
+  .file-return:not(:empty) {
+    margin: 1em 0;
+  }
+  .js .file-return {
+    font-style: italic;
+    font-size: .9em;
+    font-weight: bold;
+  }
+  .js .file-return:not(:empty):before {
+    content: "Selected file: ";
+    font-style: normal;
+    font-weight: normal;
+  }
+
+    /* post  */
+    .post{
+        border-radius: 10px;
+        font-family: 'Josefin Sans', sans-serif;
+
+    }
+
+    #postdropdown{
+        color: #E33E33 !important;
+        margin: 10px;
+        padding: 8px;
+        border-radius: 50%;
+    }
+    #postdropdown:hover{
+        transition: 0.3s;
+    }
+    .post-footer{
+        width: 100%;
+    }
+    .post-footer .heart{
+        padding: 5px;
+        font-size: 29px;
+        border-radius: 10px;
+        cursor: pointer;
+
+    }
+    .post-footer .comments, .post-footer .share{
+        font-size: 22px;
+        padding: 5px;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+    .post-footer .heart:hover, .post-footer .comments:hover, .post-footer .share:hover{
+        background-color: rgba(110, 108, 105, 0.219);
+        transition: 0.3s ease-in;
+    }
+    #heart-2{
+        display: none;
+        color: #E33E33;
+    }
+    .react-count div span{
+        font-size: 14px;
+        font-family: var(--montserrat-reg);
+    }
+    /* post  */
+/* ------------------- news feed section end ------------------- */
