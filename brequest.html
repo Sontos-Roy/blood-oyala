@@ -16,86 +16,81 @@
     <title>Blood Oyala - News Feed</title>
   </head>
   <body class="">
-    <!------- main nav bar start  ------>
-    <section class="">
-      <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark">
-        <div class="container">
-          <a class="navbar-brand" href="index.html"><img src="assets/images/logo/blood-oyala-logo2.png" alt="Blood Oyala" width="50"></a>
-
-          <div class="" id="navbarSupportedContent">
-            <ul class="navbar-nav custome-navbar-nav m-auto">
-              <li class="nav-item">
-                <a class="nav-link text-light" aria-current="page" href="index.html" title="Home"><i class="fas fa-home"></i> <span>Home</span></a>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link text-light" aria-current="page" href="newsfeed.html"><i class="fas fa-newspaper"></i> <span>News Feed</span></a>
-              </li> -->
-              <li class="nav-item">
-                <a class="nav-link text-light" aria-current="page" href="groups.html" title="Groups"><i class="fas fa-users"></i> <span>Groups</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" aria-current="page" href="donor-list.html" title="Donor List"><i class="fas fa-list"></i> <span>Donor List</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-light" aria-current="page" href="brequest.html" title="Blood Request"><img src="assets/images/logo/donate.png" alt="icon" width="20px"> <span>Blood Request</span></a>
-              </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link text-light" aria-current="page" href="#"><i class="fas fa-user"></i> <span>Profile</span></a>
-              </li> -->
-
-            </ul>
+    <!-- top nav bar start  -->
+    <section class="top-bar bg-black white">
+      <div class="container-xl">
+        <div class="row topbar-row">
+          <div class="col-lg-3 col-md-4 col-4 mt-3">
+            <span class="border-light border border-bottom-0 border-start-0 border-top-0 text-light topbar-icon p-2 font-sm"><i class="fas fa-phone"></i></span> <span class="font-sm xsm topbar-text">+880 131 018 6926</span>
           </div>
-
-
-          <div class="d-flex">
-            <button class="d-lg-none d-md-none btn btn-outline-light" onclick="sidebar1()"><i class="fas fa-bars"></i></button>
-            <div class="dropdown ps-2">
-              <div class="Profile d-flex text-light dropdown-toggle" id="profiledropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  <div class="avater"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" width="55"></div>
-                  <p class="name pt-1 m-2">Blood Oyala</p>
-                </div>
-                <ul class="dropdown-menu dropdown-menu2" aria-labelledby="profiledropdown">
-                  <li><a class="dropdown-item text-white" href="#">My Profile</a></li>
-                  <li><a class="dropdown-item text-white" href="#">Another action</a></li>
-                  <li><a class="dropdown-item text-white" href="#">Something else here</a></li>
-                </ul>
+          <div class="col-lg-3 col-md-4 col-4 mt-3">
+            <span class="border-light border border-bottom-0 border-start-0 border-top-0 text-light p-2 topbar-icon font-sm"><i class="fas fa-envelope"></i></span> <span class="font-sm xsm topbar-text">bloodoyala@gmail.com</span>
+          </div>
+          <div class="col-lg-3 col-md-4 col-4 mt-3">
+            <span class="border-light border border-bottom-0 border-start-0 border-top-0 text-light p-2 topbar-icon font-sm"><i class="fas fa-map-marker-alt"></i></span> <span class="font-sm xsm topbar-text"> Dhaka, Bangladesh</span>
+          </div>
+          <div class="topbar-icons col-lg-4 bg-red ps-4">
+            <span class="white ps-3 pt-3 font-sm">Follow Now</span>
+            <div class="icons d-flex">
+              <div class="facebook bg-white red"><i class="fa fa-facebook"></i></div>
+              <div class="instagram bg-white red"><i class="fa fa-instagram"></i></div>
+              <div class="instagram bg-white red"><i class="fa fa-twitter"></i></div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <!-- top nav bar end  -->
+  <!------- main nav bar start  ------>
+    <section class="main-nav">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" width="70"></a>
 
-            <ul class="navbar-nav custome-navbar-nav1 m-auto mb-2 mb-lg-0">
+          <div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                  <a class="nav-link text-light" aria-current="page" href="index.html" title="Home"><i class="fas fa-home"></i> <span>Home</span></a>
-                </li>
-                <!-- <li class="nav-item">
-                  <a class="nav-link text-light" aria-current="page" href="newsfeed.html"><i class="fas fa-newspaper"></i> <span>News Feed</span></a>
-                </li> -->
-                <li class="nav-item">
-                  <a class="nav-link text-light" aria-current="page" href="groups.html" title="Groups"><i class="fas fa-users"></i> <span>Groups</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light" aria-current="page" href="donor-list.html" title="Donate List"><i class="fas fa-list"></i> <span>Blood Donate</span></a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light" aria-current="page" href="bloodrequest.html"><img src="assets/images/logo/donate.png" alt="icon" width="30px"> <span>Blood Request</span></a>
-                </li>
-              <!-- <li class="nav-item">
-                <a class="nav-link text-light" aria-current="page" href="#"><i class="fas fa-user"></i> <span>Profile</span></a>
-              </li> -->
+                <a class="nav-link m-2" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link m-2" href="newsfeed.html">News Feed</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link m-2" href="groups.html">Groups</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link m-2" href="donor-list.html">Donor List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link m-2 active" href="brequest.html">Blood Request</a>
+              </li>
 
             </ul>
+            <div class="profile">
+              <a href="#" class="nav-link text-success">Login/Register</a>
+            </div>
+          </div>
         </div>
-
       </nav>
-
+      <div class="logo-bg bg-red"></div>
     </section>
 
 
-    <section class="main">
-      <div class="banner-area">
+    <!------- main nav bar end  ------>
+
+
+    <section class="">
+      <div class="brequest">
         <div class="d-lg-none d-md-none d-block p-4 post-top"></div>
         <div class="search-filter mt-5">
-          <h1 class="text-light text-center pt-5">জীবনের জন্য রক্ত</h1>
-          <h5 class="text-light text-center pt-3">আপনার কাছাকাছি রক্তদাতা খুঁজুন</h5>
+          <h1 class="text-center pt-5 title">Blood For Life</h1>
+          <h5 class="text-center pt-3 top-subtitle livvic-reg">Blood Request Near You</h5>
           <form action="" class="pt-5 pb-5">
             <div class="row justify-content-center">
               <!--Division Section-->
@@ -142,13 +137,110 @@
                       <option value="AB-">AB-</option>
                     </select>
               </div>
-              <button class="btn btn-outline-light col-lg-2 col-md-3 col-4" type="submit"><i class="fas fa-search"></i> অনুরোধ করুন </button>
+              <button class="button white bg-red p-3 m-4 col-lg-2 col-md-3 col-4" type="submit"><i class="fas fa-search"></i> অনুরোধ করুন </button>
           </form>
         </div>
       </div>
     </section>
 
-    <!------- main nav bar end  ------>
+    <!-- footer section start  -->
+    <footer class="footer" id="footer">
+      <div class="opacity pt-5">
+        <div class="container">
+          <div class="row pb-4">
+            <div class="col-lg-4 col-md-6 col-12 pt-5 f-about-us">
+              <h3>About Us</h3>
+              <p class="des">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt repellat neque consequatur laborum dolor dolores molestiae qui consequuntur reiciendis rem!
+              </p>
+              <div class="contact-info">
+                <span><b>Phone:</b> +880-13101-86926</span>
+                <span class="d-block"><b>Email:</b>  bloodoyala@gmail.com</span>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 pt-5 f-quick-link">
+              <h3>Quick Links</h3>
+              <div class="tag-list">
+                <div class="row col-lg-10 col-md-12">
+                  <div class="col-10">
+                    <a href="#" class="row tag text-decoration-none font-sm-f">
+                      <div class="col-2 red icon-double-arrow"><i class="fa fa-angle-double-right"></i></div>
+                      <div class="col-9 black bold">News Feed</div>
+                    </a>
+                    <a href="#" class="row tag text-decoration-none font-sm-f">
+                      <div class="col-2 red icon-double-arrow"><i class="fa fa-angle-double-right"></i></div>
+                      <div class="col-9 black bold">Groups</div>
+                    </a>
+                    <a href="#" class="row tag text-decoration-none font-sm-f">
+                      <div class="col-2 red icon-double-arrow"><i class="fa fa-angle-double-right"></i></div>
+                      <div class="col-9 black bold">Donor List</div>
+                    </a>
+                    <a href="#" class="row tag text-decoration-none font-sm-f">
+                      <div class="col-2 red icon-double-arrow"><i class="fa fa-angle-double-right"></i></div>
+                      <div class="col-9 black bold">Blood Request</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 pt-5 f-quick-link">
+              <h3>Our Services</h3>
+              <div class="tag-list">
+                <div class="row col-lg-10 col-md-12">
+                  <div class="col-10">
+                    <a href="#" class="row tag text-decoration-none font-sm-f">
+                      <div class="col-2 red icon-double-arrow"><i class="fa fa-angle-double-right"></i></div>
+                      <div class="col-9 black bold">Good Service</div>
+                    </a>
+                    <a href="#" class="row tag text-decoration-none font-sm-f">
+                      <div class="col-2 red icon-double-arrow"><i class="fa fa-angle-double-right"></i></div>
+                      <div class="col-9 black bold">Help People</div>
+                    </a>
+                    <a href="#" class="row tag text-decoration-none font-sm-f">
+                      <div class="col-2 red icon-double-arrow"><i class="fa fa-angle-double-right"></i></div>
+                      <div class="col-9 black bold">Hygine Tools</div>
+                    </a>
+                    <a href="#" class="row tag text-decoration-none font-sm-f">
+                      <div class="col-2 red icon-double-arrow"><i class="fa fa-angle-double-right"></i></div>
+                      <div class="col-9 black bold">24h Service</div>
+                    </a>
+                    <a href="#" class="row tag text-decoration-none font-sm-f">
+                      <div class="col-2 red icon-double-arrow"><i class="fa fa-angle-double-right"></i></div>
+                      <div class="col-9 black bold">Health Check</div>
+                    </a>
+                    <a href="#" class="row tag text-decoration-none font-sm-f">
+                      <div class="col-2 red icon-double-arrow"><i class="fa fa-angle-double-right"></i></div>
+                      <div class="col-9 black bold">Blood Bank</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row pb-5 border border-secondary border-bottom-0 border-end-0 border-start-0">
+            <div class="col-lg-6 col-md-6 col-12 pt-4 subscribe">
+              <h3 class="title">Subscribe us for more update & news !!</h3>
+              <form action="" class="form-group">
+                <input type="text" class="p-3 border-0 shadow" placeholder="Enter Your Email">
+                <button class="button p-3 bg-red white">Subscribe Now</button>
+              </form>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 pt-4 mt-3 social-follow ms-auto text-end">
+              <div class="social-btn">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+              </div>
+              <br>
+              <a href="#" class="text-decoration-none black">Privacy Policy</a> / <a href="#" class="text-decoration-none black">Term & Condition</a> / <a href="#" class="text-decoration-none black">FAQ</a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright p-4 text-center bg-black white livvic-reg">Copyright &copy; 2022 Blood Oyala. All Right Reversed.</div>
+      </div>
+    </footer>
+    <!-- footer section end  -->
 
 
 

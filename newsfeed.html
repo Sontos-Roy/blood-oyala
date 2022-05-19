@@ -1,153 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- custome css -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Media css  -->
-    <link rel="stylesheet" href="assets/css/media.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
 
-    <title>Blood Oyala - News Feed</title>
-  </head>
-  <body class="">
-    <!-- top nav bar start  -->
-    <section class="top-bar bg-black white">
-      <div class="container-xl">
-        <div class="row topbar-row">
-          <div class="col-lg-3 col-md-4 col-4 mt-3">
-            <span class="border-light border border-bottom-0 border-start-0 border-top-0 text-light topbar-icon p-2 font-sm"><i class="fas fa-phone"></i></span> <span class="font-sm xsm topbar-text">+880 131 018 6926</span>
+  <!-- custome css -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Media css  -->
+  <link rel="stylesheet" href="assets/css/media.css">
+
+  <title>Blood Oyala - News Feed</title>
+</head>
+
+<body class="">
+  <!-- top nav bar start  -->
+  <section class="top-bar bg-black white">
+    <div class="container-xl">
+      <div class="row topbar-row">
+        <div class="col-lg-3 col-md-4 col-4 mt-3">
+          <span
+            class="border-light border border-bottom-0 border-start-0 border-top-0 text-light topbar-icon p-2 font-sm"><i
+              class="fas fa-phone"></i></span> <span class="font-sm xsm topbar-text">+880 131 018 6926</span>
+        </div>
+        <div class="col-lg-3 col-md-4 col-4 mt-3">
+          <span
+            class="border-light border border-bottom-0 border-start-0 border-top-0 text-light p-2 topbar-icon font-sm"><i
+              class="fas fa-envelope"></i></span> <span class="font-sm xsm topbar-text">bloodoyala@gmail.com</span>
+        </div>
+        <div class="col-lg-3 col-md-4 col-4 mt-3">
+          <span
+            class="border-light border border-bottom-0 border-start-0 border-top-0 text-light p-2 topbar-icon font-sm"><i
+              class="fas fa-map-marker-alt"></i></span> <span class="font-sm xsm topbar-text"> Dhaka, Bangladesh</span>
+        </div>
+        <div class="topbar-icons col-lg-4 bg-red ps-4">
+          <span class="white ps-3 pt-3 font-sm">Follow Now</span>
+          <div class="icons d-flex">
+            <div class="facebook bg-white red"><i class="fa fa-facebook"></i></div>
+            <div class="instagram bg-white red"><i class="fa fa-instagram"></i></div>
+            <div class="instagram bg-white red"><i class="fa fa-twitter"></i></div>
           </div>
-          <div class="col-lg-3 col-md-4 col-4 mt-3">
-            <span class="border-light border border-bottom-0 border-start-0 border-top-0 text-light p-2 topbar-icon font-sm"><i class="fas fa-envelope"></i></span> <span class="font-sm xsm topbar-text">bloodoyala@gmail.com</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- top nav bar end  -->
+  <!------- main nav bar start  ------>
+  <section class="main-nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" width="70"></a>
+
+        <div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+          onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link m-2" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active m-2" href="newsfeed.html">News Feed</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m-2" href="groups.html">Groups</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m-2" href="donor-list.html">Donor List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m-2" href="brequest.html">Blood Request</a>
+            </li>
+
+          </ul>
+          <div class="profile">
+            <a href="#" class="nav-link text-success">Login/Register</a>
           </div>
-          <div class="col-lg-3 col-md-4 col-4 mt-3">
-            <span class="border-light border border-bottom-0 border-start-0 border-top-0 text-light p-2 topbar-icon font-sm"><i class="fas fa-map-marker-alt"></i></span> <span class="font-sm xsm topbar-text"> Dhaka, Bangladesh</span>
-          </div>
-          <div class="topbar-icons col-lg-4 bg-red ps-4">
-            <span class="white ps-3 pt-3 font-sm">Follow Now</span>
-            <div class="icons d-flex">
-              <div class="facebook bg-white red"><i class="fa fa-facebook"></i></div>
-              <div class="instagram bg-white red"><i class="fa fa-instagram"></i></div>
-              <div class="instagram bg-white red"><i class="fa fa-twitter"></i></div>
+        </div>
+      </div>
+    </nav>
+    <div class="logo-bg bg-red"></div>
+  </section>
+
+
+  <!------- main nav bar end  ------>
+
+  <!-- news feed section start  -->
+  <section class="news-feed" id="news-feed">
+    <div class="col-lg-9 col-md-12 col-12 m-auto news-feed-container">
+      <div class="add-post pt-4">
+        <div class="card">
+          <div class="d-flex col-12">
+            <div class="profile-info p-2">
+              <a href="#" class="profile-avater">
+                <img src="assets/images/logo/blood-oyala-logo2.png" width="60" alt="profile picture" lodding="lazy">
+              </a>
+            </div>
+            <div class="post-box p-2 pt-3" style="width: 100%;">
+              <form action="">
+                <textarea name="post-details" id="" cols="30" rows="3" class="post-details col-12"
+                  placeholder="What's Happening ....."></textarea>
+                <p class="file-return"></p>
+                <div class="d-flex justify-content-between">
+                  <div class="file-select">
+                    <div class="input-file-container">
+                      <input class="input-file" id="my-file" type="file">
+                      <label tabindex="0" for="my-file" class="input-file-trigger">Select a file...</label>
+                    </div>
+                  </div>
+                  <div class="ms-auto text-end">
+                    <button type="submit" class="btn btn-primary btn-rounded">Post</button>
+                  </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- top nav bar end  -->
-  <!------- main nav bar start  ------>
-    <section class="main-nav">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container">
-          <a class="navbar-brand" href="#"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" width="70"></a>
-
-          <div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link m-2" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active m-2" href="newsfeed.html">News Feed</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link m-2" href="groups.html">Groups</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link m-2" href="donor-list.html">Donor List</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link m-2" href="brequest.html">Blood Request</a>
-              </li>
-
-            </ul>
-            <div class="profile">
-              <a href="#" class="nav-link text-success">Login/Register</a>
-            </div>
-          </div>
-        </div>
-      </nav>
-      <div class="logo-bg bg-red"></div>
-    </section>
-
-
-    <!------- main nav bar end  ------>
-
-    <!-- news feed section start  -->
-    <section class="news-feed" id="news-feed">
-      <div class="col-lg-9 col-md-12 col-12 m-auto news-feed-container">
-        <div class="add-post pt-4 pb-4">
-          <div class="card">
-            <div class="d-flex col-12">
-              <div class="profile-info p-2">
-                <a href="#" class="profile-avater">
-                  <img src="assets/images/logo/blood-oyala-logo2.png" width="60" alt="profile picture" lodding="lazy">
-                </a>
-              </div>
-              <div class="post-box p-2 pt-3" style="width: 100%;">
-                <form action="">
-                  <textarea name="post-details" id="" cols="30" rows="3" class="post-details col-12" placeholder="What's Happening ....."></textarea>
-                  <p class="file-return"></p>
-                  <div class="d-flex justify-content-between">
-                    <div class="file-select">
-                      <div class="input-file-container">
-                        <input class="input-file" id="my-file" type="file">
-                        <label tabindex="0" for="my-file" class="input-file-trigger">Select a file...</label>
-                      </div>
-                    </div>
-                    <div class="ms-auto text-end">
-                      <button type="submit" class="btn btn-primary btn-rounded">Post</button>
-                    </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="post card mt-4 pb-4">
-          <div class="d-flex">
-            <div class="d-flex p-3">
-              <a href="#">
-                <img src="assets/images/logo/blood-oyala-logo2.png" class="border rounded-circle me-2"
-                  alt="Avatar" style="height: 60px" />
+      <div class="post card mt-4 pb-4">
+        <div class="d-flex">
+          <div class="d-flex p-3">
+            <a href="#">
+              <img src="assets/images/logo/blood-oyala-logo2.png" class="border rounded-circle me-2" alt="Avatar"
+                style="height: 60px" />
+            </a>
+            <div>
+              <a href="#" class="text-dark mb-0 text-decoration-none">
+                <strong>Blood Oyala</strong>
               </a>
-              <div>
-                <a href="#" class="text-dark mb-0 text-decoration-none">
-                  <strong>Blood Oyala</strong>
-                </a>
-                <a href="#" class="text-muted d-block text-decoration-none">
-                  <small>10h</small>
-                </a>
-              </div>
-            </div>
-            <div class="dropdown ms-auto p-3">
-              <a href="#" class="text-secondary" id="postdropdown" data-bs-toggle="dropdown" aria-expanded="false" ><i class="fas fa-ellipsis-h"></i></a>
-              <ul class="dropdown-menu dropdown-menu2" aria-labelledby="postdropdown">
-                <li><a class="dropdown-item" href="#">Who Can Reacts in this Post</a></li>
-                <li><a class="dropdown-item" href="#">Report</a></li>
-                <li><a class="dropdown-item" href="#">Copy Post Link</a></li>
-              </ul>
+              <a href="#" class="text-muted d-block text-decoration-none">
+                <small>10h</small>
+              </a>
             </div>
           </div>
-          <!-- Description -->
-          <div class="ps-4 pe-4">
-            <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing
-              elit. Atque ex non impedit corporis sunt nisi nam fuga
-              dolor est, saepe vitae delectus fugit, accusantium qui
-              nulla aut adipisci provident praesentium?
-            </p>
+          <div class="dropdown ms-auto p-3">
+            <a href="#" class="text-secondary" id="postdropdown" data-bs-toggle="dropdown" aria-expanded="false"><i
+                class="fas fa-ellipsis-h"></i></a>
+            <ul class="dropdown-menu dropdown-menu2" aria-labelledby="postdropdown">
+              <li><a class="dropdown-item" href="#">Who Can Reacts in this Post</a></li>
+              <li><a class="dropdown-item" href="#">Report</a></li>
+              <li><a class="dropdown-item" href="#">Copy Post Link</a></li>
+            </ul>
           </div>
+        </div>
+        <!-- Description -->
+        <div class="ps-4 pe-4">
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing
+            elit. Atque ex non impedit corporis sunt nisi nam fuga
+            dolor est, saepe vitae delectus fugit, accusantium qui
+            nulla aut adipisci provident praesentium?
+          </p>
+        </div>
         <!-- Media -->
         <div class="bg-image hover-overlay ripple rounded-0 ps-4 pe-4" data-mdb-ripple-color="light">
           <img src="https://mdbcdn.b-cdn.net/img/new/standard/people/077.webp" class="w-100" />
@@ -160,45 +172,169 @@
         <div class="card-body">
           <!-- Reactions -->
           <div class="react-count d-flex justify-content-between">
-            <div class="reacts me-auto"><span class="p-2 red"><i class="fa fa-heart"></i></span><span id="reacts">20</span><span class="ps-2">Favorites</span></div>
+            <div class="reacts me-auto"><span class="p-2 red"><i class="fa fa-heart"></i></span><span
+                id="reacts">20</span><span class="ps-2">Favorites</span></div>
             <div class="d-flex">
-              <div class="comments"><span class="p-2 red"><i class="fa fa-comment"></i></span><span id="comments">3</span> <span class="ps-2 pe-2">Comments</span></div>
-              <div class="share ms-auto pe-3">/ <span class="p-2 red"><i class="fa fa-share"></i></span><span id="share">1</span> <span class="ps-2">Share</span></div>
+              <div class="comments"><span class="p-2 red"><i class="fa fa-comment"></i></span><span
+                  id="comments">3</span> <span class="ps-2 pe-2">Comments</span></div>
+              <div class="share ms-auto"><span class="d-none d-lg-inline-block d-md-inline-block">/</span> <span
+                  class="p-2 red"><i class="fa fa-share"></i></span><span id="share">1</span> <span
+                  class="ps-2">Share</span></div>
             </div>
 
           </div>
           <!-- Reactions -->
 
           <!-- Buttons -->
-          <div class="d-flex justify-content-between text-center border-top border-bottom mb-4 post-footer">
-            <div class="heart d-flex me-auto" onclick="heartReact()"><i class="far fa-heart" id="heart-1" style="display: block;"></i><i class="fas fa-heart" id="heart-2"></i><span style="font-size: 22px; margin-left: 5px;" class="d-none d-lg-block d-md-block"> Faverite</span></div>
-            <div class="comments m-auto">
-              <i class="fas fa-comment"></i> <span class="d-none d-lg-inline-block d-md-inline-block">Comment</span>
+          <div class="d-flex justify-content-between text-center border-top border-bottom post-footer">
+            <div class="heart d-flex me-auto" onclick="heartReact()"><i class="far fa-heart p-1" id="heart-1"
+                style="display: block;"></i><i class="fas fa-heart p-1" id="heart-2"></i><span
+                style="font-size: 22px; margin-left: 5px;" class="d-none d-lg-block d-md-block livvic-reg">
+                Faverite</span></div>
+            <div class="comments m-auto" id="comment" onclick="comment()">
+              <i class="fas fa-comment"></i> <span
+                class="d-none d-lg-inline-block d-md-inline-block livvic-reg">Comment</span>
             </div>
             <div class="share ms-auto">
-              <i class="fas fa-share"></i> <span class="d-none d-lg-inline-block d-md-inline-block">Share</span>
+              <i class="fas fa-share"></i> <span
+                class="d-none d-lg-inline-block d-md-inline-block livvic-reg">Share</span>
             </div>
           </div>
           <!-- Buttons -->
+          <div id="comment-box">
+            <!-- Comments -->
 
+            <!-- Input -->
+            <div class="d-flex mb-3 mt-3">
+              <a href="">
+                <img src="https://mdbcdn.b-cdn.net/img/new/avatars/18.webp" class="border rounded-circle me-2"
+                  alt="Avatar" style="height: 40px" />
+              </a>
+              <div class="form-outline w-100">
+                <textarea class="form-control" id="textAreaExample" rows="2"></textarea>
+                <label class="form-label" for="textAreaExample">Write a comment</label>
+              </div>
+            </div>
+            <!-- Input -->
+
+            <!-- Answers -->
+
+            <!-- Single answer -->
+            <div class="d-flex mb-3 text-decoration-none">
+              <a href="">
+                <img src="https://mdbcdn.b-cdn.net/img/new/avatars/8.webp" class="border rounded-circle me-2"
+                  alt="Avatar" style="height: 40px" />
+              </a>
+              <div>
+                <div class="bg-light rounded-3 px-3 py-1">
+                  <a href="" class="text-dark mb-0 text-decoration-none">
+                    <strong>Malcolm Dosh</strong>
+                  </a>
+                  <a href="" class="text-muted d-block text-decoration-none">
+                    <small>Lorem ipsum dolor sit amet consectetur,
+                      adipisicing elit. Natus, aspernatur!</small>
+                  </a>
+                </div>
+                <a href="" class="text-muted small ms-3 me-2 text-decoration-none"><strong>Like</strong></a>
+                <a href="" class="text-muted small me-2 text-decoration-none"><strong>Reply</strong></a>
+              </div>
+            </div>
+
+            <!-- Single answer -->
+            <div class="d-flex mb-3">
+              <a href="">
+                <img src="https://mdbcdn.b-cdn.net/img/new/avatars/5.webp" class="border rounded-circle me-2"
+                  alt="Avatar" style="height: 40px" />
+              </a>
+              <div>
+                <div class="bg-light rounded-3 px-3 py-1">
+                  <a href="" class="text-dark mb-0 text-decoration-none">
+                    <strong>Rhia Wallis</strong>
+                  </a>
+                  <a href="" class="text-muted d-block text-decoration-none">
+                    <small>Et tempora ad natus autem enim a distinctio
+                      quaerat asperiores necessitatibus commodi dolorum
+                      nam perferendis labore delectus, aliquid placeat
+                      quia nisi magnam.</small>
+                  </a>
+                </div>
+                <a href="" class="text-muted small ms-3 me-2 text-decoration-none"><strong>Like</strong></a>
+                <a href="" class="text-muted small me-2 text-decoration-none"><strong>Reply</strong></a>
+              </div>
+            </div>
+
+            <!-- Single answer -->
+            <div class="d-flex mb-3">
+              <a href="">
+                <img src="https://mdbcdn.b-cdn.net/img/new/avatars/6.webp" class="border rounded-circle me-2"
+                  alt="Avatar" style="height: 40px" />
+              </a>
+              <div>
+                <div class="bg-light rounded-3 px-3 py-1">
+                  <a href="" class="text-dark mb-0 text-decoration-none">
+                    <strong>Marcie Mcgee</strong>
+                  </a>
+                  <a href="" class="text-muted d-block text-decoration-none">
+                    <small>
+                      Officia asperiores autem sit rerum architecto a
+                      deserunt doloribus obcaecati, velit ab at, ad
+                      delectus sapiente! Voluptatibus quaerat suscipit
+                      in nostrum necessitatibus illum nemo quo beatae
+                      obcaecati quidem optio fugit ipsam distinctio,
+                      illo repellendus porro sequi alias perferendis ea
+                      soluta maiores nisi eligendi? Mollitia debitis
+                      quam ex, voluptates cupiditate magnam
+                      fugiat.</small>
+                  </a>
+                </div>
+                <a href="" class="text-muted small ms-3 me-2 text-decoration-none"><strong>Like</strong></a>
+                <a href="" class="text-muted small me-2 text-decoration-none"><strong>Reply</strong></a>
+              </div>
+            </div>
+
+            <!-- Single answer -->
+            <div class="d-flex mb-3">
+              <a href="">
+                <img src="https://mdbcdn.b-cdn.net/img/new/avatars/10.webp" class="border rounded-circle me-2"
+                  alt="Avatar" style="height: 40px" />
+              </a>
+              <div>
+                <div class="bg-light rounded-3 px-3 py-1">
+                  <a href="" class="text-dark mb-0 text-decoration-none">
+                    <strong>Hollie James</strong>
+                  </a>
+                  <a href="" class="text-muted d-block text-decoration-none">
+                    <small>Voluptatibus quaerat suscipit in nostrum
+                      necessitatibus</small>
+                  </a>
+                </div>
+                <a href="" class="text-muted small ms-3 me-2 text-decoration-none"><strong>Like</strong></a>
+                <a href="" class="text-muted small me-2 text-decoration-none"><strong>Reply</strong></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Answers -->
+
+          <!-- Comments -->
 
         </div>
       </div>
-      </div>
-    </section>
-    <!-- news feed section end  -->
+    </div>
+  </section>
+  <!-- news feed section end  -->
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="https://kit.fontawesome.com/4e207534e4.js" crossorigin="anonymous"></script>
-    <script src="assets/js/city.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/4e207534e4.js" crossorigin="anonymous"></script>
+  <script src="assets/js/city.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
 
-    </script>
+  </script>
 
-  </body>
+</body>
+
 </html>
-

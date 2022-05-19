@@ -1356,7 +1356,7 @@ body {
         cursor: pointer;
     }
     .post-footer .heart:hover, .post-footer .comments:hover, .post-footer .share:hover{
-        background-color: rgba(110, 108, 105, 0.219);
+        background-color: rgba(175, 174, 172, 0.219);
         transition: 0.3s ease-in;
     }
     #heart-2{
@@ -1367,5 +1367,58 @@ body {
         font-size: 14px;
         font-family: var(--montserrat-reg);
     }
+    #comment-box{
+        display: none;
+    }
     /* post  */
 /* ------------------- news feed section end ------------------- */
+
+/* groups section start  */
+.sidebar-toggler{
+    position: absolute;
+    background-color: transparent;
+    z-index: 99999;
+    color: #000;
+}
+.sidebar-toggler div{
+    background-color: #000;
+}
+.main-sidebar{
+    position: absolute;
+    animation: sidebar 0.3s linear;
+    transition: all 0.3s linear;
+}
+@keyframes sidebar {
+    0%{
+        margin-left: -200px;
+    }100%{
+        margin-left: 0;
+    }
+}
+.mygroups{
+    width: 100%;
+    max-height: calc(60vh);
+    overflow-y: scroll;
+}
+.mygroups::-webkit-scrollbar{
+    color: transparent;
+}
+.group-list2:hover{
+    background: rgba(141, 141, 141, 0.226);
+    transition: 0.3s;
+}
+.group-list{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.315) !important;
+}
+.group-list:hover{
+    background: rgba(141, 141, 141, 0.226);
+    transition: 0.3s;
+}
+.groups-list{
+    max-height: calc(109vh);
+    overflow-y: scroll;
+}
+.groups-list::-webkit-scrollbar{
+    color: transparent;
+}
+/* groups section end  */

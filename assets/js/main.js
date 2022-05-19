@@ -1,3 +1,12 @@
+function sidebar1(y){
+  y.classList.toggle('change');
+  var x = document.getElementById('sidebar1');
+  if(x.style.display === 'none'){
+      x.style.display = 'block';
+  }else{
+      x.style.display = 'none';
+  }
+}
 function myFunction(x) {
     x.classList.toggle("change");
   }
@@ -44,3 +53,14 @@ function heartReact(){
       return document.getElementById('reacts').innerHTML = z-1;
   }
 }
+
+function comment() {
+    var x = document.getElementById("comment-box");
+    if (x.style.display === "block") {
+      x.style.display = "none";
+    } else {
+      x.style.display = "block";
+    }
+  }
+
+  
