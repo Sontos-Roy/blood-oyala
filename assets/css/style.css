@@ -1422,3 +1422,14 @@ body {
     color: transparent;
 }
 /* groups section end  */
+
+/* blood request start  */
+.brequest{
+    overflow-x: hidden;
+}
+.table{
+    display: block;
+    overflow: auto;
+    white-space: nowrap;
+}
+/* blood request end  */
