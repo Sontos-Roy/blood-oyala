@@ -210,218 +210,66 @@
         <div class="main-panel">
           <div class="content-wrapper">
             <div class="row">
-              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
+              <div class="col-12 grid-margin stretch-card">
                 <div class="card">
                   <div class="card-body">
+                    <div class="d-flex flex-row justify-content-between mb-4">
+                      <h4 class="card-title mb-1">Setting</h4>
+                    </div>
                     <div class="row">
-                      <div class="col-9">
-                        <div class="d-flex align-items-center align-self-start">
-                          <h3 class="mb-0">3602</h3>
+                      
+                      <div class="col-12">
+                        <h2 class="form-label ms-2">Password</h2>
+                        <form action="">
+                          <div class="preview-item border-bottom">
+                            <label for="" class="form-label">Enter Old Password</label>
+                            <input type="text" class="form-control" placeholder="Enter Old Password">
+                            <a href="#">Forget Password</a>
+                          </div>
+                          <br>
+                          <div class="preview-item border-bottom">
+                            <label for="" class="form-label">Enter New Password</label>
+                            <input type="text" class="form-control" placeholder="Enter New Password">
+                            <br>
+                            <button class="btn btn-success mb-3">Change Password</button>
+                          </div>
+                          <br><br>
+                        </form>
+                        <div class="preview-item border-bottom">
+                          <h2 class="form-label ms-2">More Setting</h2>
+                          <form action="">
+                            <div class="form-check form-switch">
+                              <label class="switch">
+                                <input type="checkbox" checked name="notification_toggle" onclick="notification()" id="notification-checkbox">
+                                <span class="slider round"></span>
+                              </label>
+                              <label class="form-check-label" for="flexSwitchCheckDefault" style="display: inline;">Notification <span id="notification-toggle">Yes</span></label>
+                            </div>
+                          </form>
                         </div>
-                      </div>
-                      <div class="col-3">
+                        <br><br>
+                        <form action="">
+                          <h2>Delete Your Account</h2>
+                          <div class="preview-item border-bottom">
+                            <label for="" class="form-label">Please confirm Your Password</label>
+                            <input type="text" class="form-control" placeholder="Enter your Password" disabled>
+                            <br>
+                            <button class="btn btn-danger mb-3" disabled>Delete your Account</button>
+                            
+                          </div>
+                          <span class="text-muted">Admin account not deletable</span>
+                          <br><br>
+                        </form>
                       </div>
                     </div>
-                    <h5 class="text-success font-weight-normal">Total of Donors</h5>
                   </div>
                 </div>
               </div>
-              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-9">
-                        <div class="d-flex align-items-center align-self-start">
-                          <h3 class="mb-0">6250</h3>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                      </div>
-                    </div>
-                    <h5 class="text-success font-weight-normal">Total of Recipient</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-9">
-                        <div class="d-flex align-items-center align-self-start">
-                          <h3 class="mb-0">315</h3>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                      </div>
-                    </div>
-                    <h5 class="text-success font-weight-normal">Total of Request today</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-9">
-                        <div class="d-flex align-items-center align-self-start">
-                          <h3 class="mb-0">230</h3>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                      </div>
-                    </div>
-                    <h5 class="text-success font-weight-normal">Total of Donations today</h5>
-                  </div>
-                </div>
-              </div>
-              
             </div>
-            <br><br>
-            <h1>Total Blood Available</h1>
-            <div class="row">
-              
-              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-9">
-                        <div class="d-flex align-items-center align-self-start">
-                          <h3 class="mb-0 text-danger">A+</h3>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                      </div>
-                    </div>
-                    <h5 class="text-light font-weight-normal">55 donors</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-9">
-                        <div class="d-flex align-items-center align-self-start">
-                          <h3 class="mb-0 text-danger">B+</h3>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                      </div>
-                    </div>
-                    <h5 class="text-light font-weight-normal"><span>20</span> donors</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-9">
-                        <div class="d-flex align-items-center align-self-start">
-                          <h3 class="mb-0 text-danger">AB+</h3>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                      </div>
-                    </div>
-                    <h5 class="text-light font-weight-normal"><span>60</span> donors</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-9">
-                        <div class="d-flex align-items-center align-self-start">
-                          <h3 class="mb-0 text-danger">O+</h3>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                      </div>
-                    </div>
-                    <h5 class="text-light font-weight-normal"><span>160</span> donors</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-9">
-                        <div class="d-flex align-items-center align-self-start">
-                          <h3 class="mb-0 text-danger">A-</h3>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                      </div>
-                    </div>
-                    <h5 class="text-light font-weight-normal">55 donors</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-9">
-                        <div class="d-flex align-items-center align-self-start">
-                          <h3 class="mb-0 text-danger">B-</h3>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                      </div>
-                    </div>
-                    <h5 class="text-light font-weight-normal"><span>20</span> donors</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-9">
-                        <div class="d-flex align-items-center align-self-start">
-                          <h3 class="mb-0 text-danger">AB-</h3>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                      </div>
-                    </div>
-                    <h5 class="text-light font-weight-normal"><span>60</span> donors</h5>
-                  </div>
-                </div>
-              </div>
-              <div class="col-xl-3 col-sm-6 grid-margin stretch-card">
-                <div class="card">
-                  <div class="card-body">
-                    <div class="row">
-                      <div class="col-9">
-                        <div class="d-flex align-items-center align-self-start">
-                          <h3 class="mb-0 text-danger">O-</h3>
-                        </div>
-                      </div>
-                      <div class="col-3">
-                      </div>
-                    </div>
-                    <h5 class="text-light font-weight-normal"><span>160</span> donors</h5>
-                  </div>
-                </div>
-              </div>
-              
-              
-            </div>
-            
           </div>
           <!-- content-wrapper ends -->
-          
-          <!-- partial -->
-        </div>
-        <!-- main-panel ends -->
-      </div>
-      <!-- page-body-wrapper ends -->
-    </div>
-    <!-- container-scroller -->
+          <!-- partial:partials/_footer.html -->
+
     <!-- plugins:js -->
     <script src="assets/vendors/js/vendor.bundle.base.js"></script>
     <!-- endinject -->
@@ -442,5 +290,16 @@
     <!-- Custom js for this page -->
     <script src="assets/js/dashboard.js"></script>
     <!-- End custom js for this page -->
+    <script>
+      var checkbox_notification = document.getElementById('notification-checkbox');
+      var checkbox_yesorno = document.getElementById('notification-toggle');
+      function notification(){
+        if(checkbox_notification.checked == true){
+          return checkbox_yesorno.innerHTML = "On";
+        }else{
+          return checkbox_yesorno.innerHTML = "Off";
+        }
+      }
+    </script>
   </body>
 </html>

@@ -152,16 +152,16 @@ body {
 /* main navbar start  */
     /* toggler animation  */
     .bar1, .bar2, .bar3 {
-        width: 35px;
-        height: 4px;
+        width: 30px;
+        height: 3px;
         background-color: rgb(255, 255, 255);
-        margin: 7px 0;
+        margin: 5px 0;
         transition: 0.4s;
       }
 
       .change .bar1 {
-        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-        transform: rotate(-45deg) translate(-9px, 6px);
+        -webkit-transform: rotate(-45deg) translate(-0px, 0px);
+        transform: rotate(-45deg) translate(-5px, 3px);
       }
 
       .change .bar2 {opacity: 0;}
@@ -177,6 +177,9 @@ body {
 .navbar-brand{
     z-index: 99999;
 }
+.get-app{
+    z-index: 99999;
+}
 .navbar-toggler{
     z-index: 9999;
     border: none;
@@ -185,7 +188,7 @@ body {
     position: absolute;
     top: 60px;
     left: 0;
-    height: 96px;
+    min-height: 96px;
     width: 15%;
     z-index: 999;
 }
@@ -215,6 +218,62 @@ body {
       width: 100%;
     }
   }
+  .dropdown-menu{
+    clip-path: polygon(42% 0%, 48% 4%, 100% 4%, 100% 100%, 0 100%, 0 4%, 36% 4%);
+  }
+  .notification-dropdown-menu{
+      width: 312px;
+      margin: 0;
+      position: absolute;
+      left: -100px !important;
+        z-index: 1000;
+        min-width: 10rem;
+        padding: 0.5rem 0;
+        margin: 0;
+        text-align: left;
+        background: var(--bg);
+        clip-path: polygon(42% 0%, 48% 4%, 100% 4%, 100% 100%, 0 100%, 0 4%, 36% 4%);
+
+  }
+  .notification-dropdown-menu li{
+      padding: 10px;
+  }
+  .notification-dropdown-menu li a{
+      white-space: inherit !important;
+      text-decoration: none;
+  }
+  .nested-notifi-list{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      max-height: 200px;
+      overflow-y: scroll;
+  }
+  .nested-notifi-list::-webkit-scrollbar{
+    background: transparent;
+    width: 0;
+}
+  .nested-notifi-list .dropdown-li{
+      transition: all 0.3s;
+  }
+  .nested-notifi-list .dropdown-li:hover{
+      transition: all 0.3s;
+      background: #7979793a;
+  }
+  .nested-notifi-list .dropdown-li a{
+      color: rgb(73, 71, 71);
+      transition: all 0.3s;
+  }
+  .nested-notifi-list .dropdown-li:hover a{
+      color: #000;
+      transition: all 0.3s;
+  }
+
+  .profile{
+      z-index: 99999999;
+  }
+
+
 /* main navbar end  */
 /* banner start  */
 #banner {
@@ -1380,8 +1439,30 @@ body {
     z-index: 99999;
     color: #000;
 }
-.sidebar-toggler div{
-    background-color: #000;
+.sidebar-toggler{
+    background-color: var(--black);
+    border-radius: 0 50% 50% 0;
+    color: var(--white);
+    width: 50px;
+    height: 50px;
+    margin-left: -30px;
+}
+.sidebar-toggler i{
+    margin-top: 10px;
+    animation: side-i 1s infinite;
+    font-size: 30px;
+}
+@keyframes side-i {
+    0%{
+        opacity: 0;
+        margin-left: 0;
+    }50%{
+        opacity: 1;
+        margin-left: 25px;
+    }100%{
+        opacity: 0;
+        margin-left: 40px;
+    }
 }
 .main-sidebar{
     position: absolute;
@@ -1433,3 +1514,77 @@ body {
     white-space: nowrap;
 }
 /* blood request end  */
+
+/* login section start  */
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+    }
+
+    @media (min-width: 768px) {
+    .gradient-form {
+    height: 100vh !important;
+    }
+    }
+    @media (min-width: 769px) {
+    .gradient-custom-2 {
+    border-top-right-radius: .3rem;
+    border-bottom-right-radius: .3rem;
+    }
+    }
+    .form-outline .form-control~.form-label {
+        position: absolute;
+        margin-top: -37px;
+        margin-left: 75px;
+        max-width: 90%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        left: 0.75rem;
+        padding-top: 0.37rem;
+        pointer-events: none;
+        transform-origin: 0 0;
+        transition: all .2s ease-out;
+        color: rgba(0,0,0,.6);
+        margin-bottom: 0;
+    }
+    .form-outline .form-control:focus {
+        box-shadow: none!important;
+        border: 1px solid var(--black);
+    }
+    .form-outline .form-control:focus~.form-label{
+        margin-top: -54px;
+        font-size: 15px;
+        background-color: white;
+    }
+    .form-outline .form-control{
+        min-height: auto;
+        padding: 0.33em 0.75em;
+        background: transparent;
+        transition: all .2s linear;
+    }
+    INPUT:not(:-webkit-autofill), SELECT:not(:-webkit-autofill), TEXTAREA:not(:-webkit-autofill) {
+        animation-name: onautofillcancel;
+    }
+    .register-2{
+        background-color: rgba(0, 0, 0, 0.418);
+        height: 100%;
+        width: 100%;
+    }
+    .form-control:focus{
+        /* border: 1px solid red !important; */
+        outline: 0;
+        box-shadow: none;
+        border-color: #000;
+        border-width: 1px 1px 1px 0;
+    }
+    #password:focus{
+        border-color: green !important;
+    }
+/* login section end  */

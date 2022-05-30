@@ -49,12 +49,13 @@
     </div>
   </section>
   <!-- top nav bar end  -->
-  <!------- main nav bar start  ------>
-  <section class="main-nav">
+  
+   <!------- main nav bar start  ------>
+   <section class="main-nav">
     <nav class="navbar navbar-expand-lg navbar-light bg-white">
       <div class="container">
         <a class="navbar-brand" href="index.html"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" width="70"></a>
-
+        <a href="#" class="btn btn-info rounded get-app d-block d-lg-none d-md-block">Get App</a>
         <div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
           onclick="myFunction(this)">
@@ -62,14 +63,50 @@
           <div class="bar2"></div>
           <div class="bar3"></div>
         </div>
-
+        <div class="profile d-lg-none d-md-block">
+          <div class="d-flex">
+            <!-- <a href="#" class="nav-link text-success active">Login/Register</a> -->
+            <div class="notification col dropdown text-center me-2">
+                
+              <div class="position-relative pt-2 white dropdown-toggle" id="notification-dpdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-bell pt-1"></i>
+                <span class="position-absolute top-2 p-1 start-50 translate-middle badge rounded-circle bg-success red">
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </div>
+              <ul class="dropdown-menu notification-dropdown-menu" aria-labelledby="notification-dpdown">
+                <li class="text-muted">Notifications - <span class="red">5</span></li>
+                  <hr>
+                  <ul class="nested-notifi-list">
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    
+                  </ul>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <div class="dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/images/logo/blood-oyala-logo2.png" alt="Avatar" class="rounded-circle" width="50">
+                <span class="">Blood Oyala</span>
+              </div>
+              <ul class="dropdown-menu dropdown-menu-end col-12 " aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav m-auto mb-2 mb-lg-0">
             <li class="nav-item">
               <a class="nav-link m-2" aria-current="page" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active m-2" href="newsfeed.html">News Feed</a>
+              <a class="nav-link m-2" href="newsfeed.html">Add Support</a>
             </li>
             <li class="nav-item">
               <a class="nav-link m-2" href="groups.html">Groups</a>
@@ -80,17 +117,53 @@
             <li class="nav-item">
               <a class="nav-link m-2" href="brequest.html">Blood Request</a>
             </li>
-
+            <li class="nav-item">
+              <a class="nav-link m-2" href="donations.html">Donations</a>
+            </li>
+  
           </ul>
-          <div class="profile">
-            <a href="#" class="nav-link text-success">Login/Register</a>
+          <div class="d-lg-block d-md-none d-none">
+            <div class="profile row">
+              <!-- <a href="#" class="nav-link text-success active">Login/Register</a> -->
+              <div class="notification col dropdown" style="cursor: pointer;">
+                
+                <div class="position-relative pt-2 red dropdown-toggle" id="notification-dpdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-bell pt-1"></i>
+                </div>
+                <ul class="dropdown-menu dropdown-menu-end notification-dropdown-menu notification-dropdown-menu" aria-labelledby="notification-dpdown">
+                  <li class="text-muted">Notifications - <span class="red">5</span></li>
+                  <hr>
+                  <ul class="nested-notifi-list">
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    
+                  </ul>
+                </ul>
+              </div>
+              <div class="dropdown col" style="cursor: pointer;">
+                <div class="dropdown-toggle" id="profile-dpdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="assets/images/logo/blood-oyala-logo2.png" alt="Avatar" class="rounded-circle" width="50">
+                  <span class="">Blood Oyala</span>
+                </div>
+                <ul class="dropdown-menu bg dropdown-menu-end col-12" aria-labelledby="profile-dpdown">
+                  <li><a class="dropdown-item p-3 text-muted" href="#"><span class="p-2"><i class="fa fa-user"></i></span> My Profile</a></li>
+                  <li><a class="dropdown-item p-3 text-muted" href="#"><span class="p-2"><i class="fa fa-credit-card"></i></span> Payments</a></li>
+                  <li><a class="dropdown-item p-3 text-muted" href="#"><span class="p-2"><i class="fa fa-support"></i></span> Support Team</a></li>
+                  <li><a class="dropdown-item p-3 text-muted" href="#"><span class="p-2"><i class="fa fa-gear"></i></span> Settings</a></li>
+                  <li><a class="dropdown-item p-3 text-muted" href="#"><span class="p-2"><i class="fa fa-share"></i></span> Share</a></li>
+                  <li><a class="dropdown-item p-3 text-danger" href="#"><span class="p-2"><i class="fa fa-sign-out"></i></span> Logout</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </nav>
     <div class="logo-bg bg-red"></div>
   </section>
-
 
   <!------- main nav bar end  ------>
 
@@ -211,8 +284,7 @@
                   alt="Avatar" style="height: 40px" />
               </a>
               <div class="form-outline w-100">
-                <textarea class="form-control" id="textAreaExample" rows="2"></textarea>
-                <label class="form-label" for="textAreaExample">Write a comment</label>
+                <textarea class="form-control" id="textAreaExample" rows="2" placeholder="Write a Comment"></textarea>
               </div>
             </div>
             <!-- Input -->

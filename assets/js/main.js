@@ -63,4 +63,35 @@ function comment() {
     }
   }
 
+
+  function password() {
+    var x = document.getElementById("password");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+  function cpassword() {
+    var x = document.getElementById("cpassword");
+    if (x.type === "password") {
+      x.type = "text";
+    } else {
+      x.type = "password";
+    }
+  }
+
+  jQuery('.validate-form').validate({
+    rules : {
+      password : {
+        minlength : 5
+      },
+      cpassword : {
+        minlength : 5,
+        equalTo : "#password"
+      }
+    }
+  });
+
+
   

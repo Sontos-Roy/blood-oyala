@@ -43,44 +43,119 @@
     </section>
     <!-- top nav bar end  -->
   <!------- main nav bar start  ------>
-    <section class="main-nav">
-      <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <div class="container">
-          <a class="navbar-brand" href="index.html"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" width="70"></a>
-
-          <div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="myFunction(this)">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </div>
-
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link m-2" aria-current="page" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link m-2" href="newsfeed.html">News Feed</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link m-2" href="groups.html">Groups</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link m-2" href="donor-list.html">Donor List</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link m-2 active" href="brequest.html">Blood Request</a>
-              </li>
-
-            </ul>
-            <div class="profile">
-              <a href="#" class="nav-link text-success">Login/Register</a>
+  <section class="main-nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" width="70"></a>
+        <a href="#" class="btn btn-info rounded get-app d-block d-lg-none d-md-block">Get App</a>
+        <div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+          onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div class="profile d-lg-none d-md-block">
+          <div class="d-flex">
+            <!-- <a href="#" class="nav-link text-success active">Login/Register</a> -->
+            <div class="notification col dropdown text-center me-2">
+                
+              <div class="position-relative pt-2 white dropdown-toggle" id="notification-dpdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-bell pt-1"></i>
+                <span class="position-absolute top-2 p-1 start-50 translate-middle badge rounded-circle bg-success red">
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </div>
+              <ul class="dropdown-menu notification-dropdown-menu" aria-labelledby="notification-dpdown">
+                <li class="text-muted">Notifications - <span class="red">5</span></li>
+                  <hr>
+                  <ul class="nested-notifi-list">
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    
+                  </ul>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <div class="dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/images/logo/blood-oyala-logo2.png" alt="Avatar" class="rounded-circle" width="50">
+                <span class="">Blood Oyala</span>
+              </div>
+              <ul class="dropdown-menu dropdown-menu-end col-12 " aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
             </div>
           </div>
         </div>
-      </nav>
-      <div class="logo-bg bg-red"></div>
-    </section>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link m-2" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m-2" href="newsfeed.html">Add Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m-2" href="groups.html">Groups</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m-2" href="donor-list.html">Donor List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m-2" href="brequest.html">Blood Request</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m-2" href="donations.html">Donations</a>
+            </li>
+  
+          </ul>
+          <div class="d-lg-block d-md-none d-none">
+            <div class="profile row">
+              <!-- <a href="#" class="nav-link text-success active">Login/Register</a> -->
+              <div class="notification col dropdown" style="cursor: pointer;">
+                
+                <div class="position-relative pt-2 red dropdown-toggle" id="notification-dpdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-bell pt-1"></i>
+                </div>
+                <ul class="dropdown-menu dropdown-menu-end notification-dropdown-menu notification-dropdown-menu" aria-labelledby="notification-dpdown">
+                  <li class="text-muted">Notifications - <span class="red">5</span></li>
+                  <hr>
+                  <ul class="nested-notifi-list">
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    
+                  </ul>
+                </ul>
+              </div>
+              <div class="dropdown col" style="cursor: pointer;">
+                <div class="dropdown-toggle" id="profile-dpdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="assets/images/logo/blood-oyala-logo2.png" alt="Avatar" class="rounded-circle" width="50">
+                  <span class="">Blood Oyala</span>
+                </div>
+                <ul class="dropdown-menu bg dropdown-menu-end col-12" aria-labelledby="profile-dpdown">
+                  <li><a class="dropdown-item p-3 text-muted" href="#"><span class="p-2"><i class="fa fa-user"></i></span> My Profile</a></li>
+                  <li><a class="dropdown-item p-3 text-muted" href="#"><span class="p-2"><i class="fa fa-credit-card"></i></span> Payments</a></li>
+                  <li><a class="dropdown-item p-3 text-muted" href="#"><span class="p-2"><i class="fa fa-support"></i></span> Support Team</a></li>
+                  <li><a class="dropdown-item p-3 text-muted" href="#"><span class="p-2"><i class="fa fa-gear"></i></span> Settings</a></li>
+                  <li><a class="dropdown-item p-3 text-muted" href="#"><span class="p-2"><i class="fa fa-share"></i></span> Share</a></li>
+                  <li><a class="dropdown-item p-3 text-danger" href="#"><span class="p-2"><i class="fa fa-sign-out"></i></span> Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="logo-bg bg-red"></div>
+  </section>
 
 
     <!------- main nav bar end  ------>
@@ -147,13 +222,14 @@
     <section id="requests">
       <div class="container">
         <h1 class="title pt-3 pb-3">Find the Current blood request near you</h1>
-        <table id="current-request" class="table table-striped table-sm table-bordered table-hover table-inverse table-inverse table-responsive">
-          <thead class="thead-inverse|thead-default">
+        <table id="current-request" class="table m-auto table-striped table-bordered table-hover table-responsive">
+          <thead class="thead-default">
               <tr>
                   <th>SL</th>
                   <th>Name</th>
                   <th>Address</th>
                   <th>Request Time</th>
+                  <th>Blood</th>
                   <th>Contact</th>
               </tr>
           </thead>
@@ -163,8 +239,9 @@
                   <td>Jhon Mart</td>
                   <td>Sadar, Rangpur, Rangpur</td>
                   <td>5 hour ago</td>
+                  <td>O+</td>
                   <td>
-                    <a href="#" class="btn btn-success">Get Number</a>
+                    <a href="#" class="btn">+8801253525252</a>
                     <a href="#" class="btn btn-info">Message</a>
                   </td>
               </tr>
@@ -173,8 +250,9 @@
                   <td>Kelin Kim</td>
                   <td>Pirganj, Thakurgaon, Rangpur</td>
                   <td>5 hour ago</td>
+                  <td>O+</td>
                   <td>
-                    <a href="#" class="btn btn-success">Get Number</a>
+                    <a href="#" class="btn">+8801253525252</a>
                     <a href="#" class="btn btn-info">Message</a>
                   </td>
               </tr>
@@ -183,8 +261,9 @@
                   <td>Martin Deo</td>
                   <td>Sadar, Rajshahi, Rajshahi</td>
                   <td>4 hour ago</td>
+                  <td>O+</td>
                   <td>
-                    <a href="#" class="btn btn-success">Get Number</a>
+                    <a href="#" class="btn">+8801253525252</a>
                     <a href="#" class="btn btn-info">Message</a>
                   </td>
               </tr>
@@ -193,8 +272,9 @@
                   <td>Shovo Roy</td>
                   <td>Sadar, Potuyakhali, Barisal</td>
                   <td>3 hour ago</td>
+                  <td>O+</td>
                   <td>
-                    <a href="#" class="btn btn-success">Get Number</a>
+                    <a href="#" class="btn">+8801253525252</a>
                     <a href="#" class="btn btn-info">Message</a>
                   </td>
               </tr>
@@ -203,8 +283,9 @@
                   <td>Liton Ahamed</td>
                   <td>Tejgaon, Dhaka, Dhaka</td>
                   <td>3 hour ago</td>
+                  <td>O+</td>
                   <td>
-                    <a href="#" class="btn btn-success">Get Number</a>
+                    <a href="#" class="btn">+8801253525252</a>
                     <a href="#" class="btn btn-info">Message</a>
                   </td>
               </tr>
@@ -213,8 +294,9 @@
                   <td>Saad Ahamed</td>
                   <td>Savar, Gajipur, Dhaka</td>
                   <td>2 Hour Ago</td>
+                  <td>O+</td>
                   <td>
-                    <a href="#" class="btn btn-success">Get Number</a>
+                    <a href="#" class="btn">+8801253525252</a>
                     <a href="#" class="btn btn-info">Message</a>
                   </td>
               </tr>
@@ -223,8 +305,9 @@
                   <td>Rahim Islam</td>
                   <td>Sadar, Jaypurhat, Rajshahi</td>
                   <td>1 hour ago</td>
+                  <td>O+</td>
                   <td>
-                    <a href="#" class="btn btn-success">Get Number</a>
+                    <a href="#" class="btn">+8801253525252</a>
                     <a href="#" class="btn btn-info">Message</a>
                   </td>
               </tr>
@@ -233,8 +316,9 @@
                   <td>Karim</td>
                   <td>Sadar, Naraynganj, Dhaka</td>
                   <td>50 Minutes ago</td>
+                  <td>O+</td>
                   <td>
-                    <a href="#" class="btn btn-success">Get Number</a>
+                    <a href="#" class="btn">+8801253525252</a>
                     <a href="#" class="btn btn-info">Message</a>
                   </td>
               </tr>
@@ -243,8 +327,9 @@
                   <td>Martin Deo</td>
                   <td>Sadar, Bagerhat, Khulna</td>
                   <td>30 minutes ago</td>
+                  <td>O+</td>
                   <td>
-                    <a href="#" class="btn btn-success">Get Number</a>
+                    <a href="#" class="btn">+8801253525252</a>
                     <a href="#" class="btn btn-info">Message</a>
                   </td>
               </tr>
@@ -253,8 +338,135 @@
                   <td>Martin Deo</td>
                   <td>Sadar, Sunamganj, Shylet</td>
                   <td>10 minutes ago</td>
+                  <td>O+</td>
                   <td>
-                    <a href="#" class="btn btn-success">Get Number</a>
+                    <a href="#" class="btn">+8801253525252</a>
+                    <a href="#" class="btn btn-info">Message</a>
+                  </td>
+              </tr>
+
+          </tbody>
+      </table>
+
+        <table id="current-request2" class="table m-auto table-striped table-bordered table-hover table-responsive">
+          <thead class="thead-default">
+              <tr>
+                  <th>SL</th>
+                  <th>Name</th>
+                  <th>Address</th>
+                  <th>Request Time</th>
+                  <th>Blood</th>
+                  <th>Contact</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>1</td>
+                  <td>Jhon Mart</td>
+                  <td>Sadar, Rangpur, Rangpur</td>
+                  <td>5 hour ago</td>
+                  <td>O+</td>
+                  <td>
+                    <a href="#" class="btn">+8801253525252</a>
+                    <a href="#" class="btn btn-info">Message</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Kelin Kim</td>
+                  <td>Pirganj, Thakurgaon, Rangpur</td>
+                  <td>5 hour ago</td>
+                  <td>O+</td>
+                  <td>
+                    <a href="#" class="btn">+8801253525252</a>
+                    <a href="#" class="btn btn-info">Message</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td>3</td>
+                  <td>Martin Deo</td>
+                  <td>Sadar, Rajshahi, Rajshahi</td>
+                  <td>4 hour ago</td>
+                  <td>O+</td>
+                  <td>
+                    <a href="#" class="btn">+8801253525252</a>
+                    <a href="#" class="btn btn-info">Message</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td>4</td>
+                  <td>Shovo Roy</td>
+                  <td>Sadar, Potuyakhali, Barisal</td>
+                  <td>3 hour ago</td>
+                  <td>O+</td>
+                  <td>
+                    <a href="#" class="btn">+8801253525252</a>
+                    <a href="#" class="btn btn-info">Message</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td>5</td>
+                  <td>Liton Ahamed</td>
+                  <td>Tejgaon, Dhaka, Dhaka</td>
+                  <td>3 hour ago</td>
+                  <td>O+</td>
+                  <td>
+                    <a href="#" class="btn">+8801253525252</a>
+                    <a href="#" class="btn btn-info">Message</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td>6</td>
+                  <td>Saad Ahamed</td>
+                  <td>Savar, Gajipur, Dhaka</td>
+                  <td>2 Hour Ago</td>
+                  <td>O+</td>
+                  <td>
+                    <a href="#" class="btn">+8801253525252</a>
+                    <a href="#" class="btn btn-info">Message</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td>7</td>
+                  <td>Rahim Islam</td>
+                  <td>Sadar, Jaypurhat, Rajshahi</td>
+                  <td>1 hour ago</td>
+                  <td>O+</td>
+                  <td>
+                    <a href="#" class="btn">+8801253525252</a>
+                    <a href="#" class="btn btn-info">Message</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td>8</td>
+                  <td>Karim</td>
+                  <td>Sadar, Naraynganj, Dhaka</td>
+                  <td>50 Minutes ago</td>
+                  <td>O+</td>
+                  <td>
+                    <a href="#" class="btn">+8801253525252</a>
+                    <a href="#" class="btn btn-info">Message</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td>9</td>
+                  <td>Martin Deo</td>
+                  <td>Sadar, Bagerhat, Khulna</td>
+                  <td>30 minutes ago</td>
+                  <td>O+</td>
+                  <td>
+                    <a href="#" class="btn">+8801253525252</a>
+                    <a href="#" class="btn btn-info">Message</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td>10</td>
+                  <td>Martin Deo</td>
+                  <td>Sadar, Sunamganj, Shylet</td>
+                  <td>10 minutes ago</td>
+                  <td>O+</td>
+                  <td>
+                    <a href="#" class="btn">+8801253525252</a>
                     <a href="#" class="btn btn-info">Message</a>
                   </td>
               </tr>
@@ -377,6 +589,11 @@
       $(document).ready( function () {
     $('#current-request').DataTable();
 } );
+
+$(document).ready(function () {
+  $('#current-request2').DataTable();
+  $('.dataTables_length').addClass('bs-select');
+});
 
     </script>
 

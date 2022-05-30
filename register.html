@@ -16,179 +16,728 @@
     <title>Blood Oyala - Register</title>
   </head>
   <body class="register">
+    <!-- top nav bar start  -->
+<section class="top-bar bg-black white">
+  <div class="container-xl">
+    <div class="row topbar-row">
+      <div class="col-lg-3 col-md-4 col-4 mt-3">
+        <span
+          class="border-light border border-bottom-0 border-start-0 border-top-0 text-light topbar-icon p-2 font-sm"><i
+            class="fas fa-phone"></i></span> <span class="font-sm xsm topbar-text">+880 131 018 6926</span>
+      </div>
+      <div class="col-lg-3 col-md-4 col-4 mt-3">
+        <span
+          class="border-light border border-bottom-0 border-start-0 border-top-0 text-light p-2 topbar-icon font-sm"><i
+            class="fas fa-envelope"></i></span> <span class="font-sm xsm topbar-text">bloodoyala@gmail.com</span>
+      </div>
+      <div class="col-lg-3 col-md-4 col-4 mt-3">
+        <span
+          class="border-light border border-bottom-0 border-start-0 border-top-0 text-light p-2 topbar-icon font-sm"><i
+            class="fas fa-map-marker-alt"></i></span> <span class="font-sm xsm topbar-text"> Dhaka, Bangladesh</span>
+      </div>
+      <div class="topbar-icons col-lg-4 bg-red ps-4">
+        <span class="white ps-3 pt-3 font-sm">Follow Now</span>
+        <div class="icons d-flex">
+          <div class="facebook bg-white red"><i class="fa fa-facebook"></i></div>
+          <div class="instagram bg-white red"><i class="fa fa-instagram"></i></div>
+          <div class="instagram bg-white red"><i class="fa fa-twitter"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- top nav bar end  -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.12.0/css/jquery.dataTables.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css"/>
+
+    <!-- custome css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Media css  -->
+    <link rel="stylesheet" href="assets/css/media.css">
+
+    <title>Blood Oyala - News Feed</title>
+  </head>
+  <body class="">
+    <!-- top nav bar start  -->
+    <section class="top-bar bg-black white">
+      <div class="container-xl">
+        <div class="row topbar-row">
+          <div class="col-lg-3 col-md-4 col-4 mt-3">
+            <span class="border-light border border-bottom-0 border-start-0 border-top-0 text-light topbar-icon p-2 font-sm"><i class="fas fa-phone"></i></span> <span class="font-sm xsm topbar-text">+880 131 018 6926</span>
+          </div>
+          <div class="col-lg-3 col-md-4 col-4 mt-3">
+            <span class="border-light border border-bottom-0 border-start-0 border-top-0 text-light p-2 topbar-icon font-sm"><i class="fas fa-envelope"></i></span> <span class="font-sm xsm topbar-text">bloodoyala@gmail.com</span>
+          </div>
+          <div class="col-lg-3 col-md-4 col-4 mt-3">
+            <span class="border-light border border-bottom-0 border-start-0 border-top-0 text-light p-2 topbar-icon font-sm"><i class="fas fa-map-marker-alt"></i></span> <span class="font-sm xsm topbar-text"> Dhaka, Bangladesh</span>
+          </div>
+          <div class="topbar-icons col-lg-4 bg-red ps-4">
+            <span class="white ps-3 pt-3 font-sm">Follow Now</span>
+            <div class="icons d-flex">
+              <div class="facebook bg-white red"><i class="fa fa-facebook"></i></div>
+              <div class="instagram bg-white red"><i class="fa fa-instagram"></i></div>
+              <div class="instagram bg-white red"><i class="fa fa-twitter"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- top nav bar end  -->
+  <!------- main nav bar start  ------>
+  <section class="main-nav">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" width="70"></a>
+        <a href="#" class="btn btn-info rounded get-app d-block d-lg-none d-md-block">Get App</a>
+        <div class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+          onclick="myFunction(this)">
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <div class="profile d-lg-none d-md-block">
+          <div class="d-flex">
+            <!-- <a href="#" class="nav-link text-success active">Login/Register</a> -->
+            <div class="notification col dropdown text-center me-2">
+                
+              <div class="position-relative pt-2 white dropdown-toggle" id="notification-dpdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-bell pt-1"></i>
+                <span class="position-absolute top-2 p-1 start-50 translate-middle badge rounded-circle bg-success red">
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </div>
+              <ul class="dropdown-menu notification-dropdown-menu" aria-labelledby="notification-dpdown">
+                <li class="text-muted">Notifications - <span class="red">5</span></li>
+                  <hr>
+                  <ul class="nested-notifi-list">
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    
+                  </ul>
+              </ul>
+            </div>
+            <div class="dropdown">
+              <div class="dropdown-toggle" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                <img src="assets/images/logo/blood-oyala-logo2.png" alt="Avatar" class="rounded-circle" width="50">
+                <span class="">Blood Oyala</span>
+              </div>
+              <ul class="dropdown-menu dropdown-menu-end col-12 " aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link m-2" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m-2" href="newsfeed.html">Add Support</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m-2" href="groups.html">Groups</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m-2" href="donor-list.html">Donor List</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m-2" href="brequest.html">Blood Request</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link m-2" href="donations.html">Donations</a>
+            </li>
+  
+          </ul>
+          <div class="d-lg-block d-md-none d-none">
+            <div class="profile row">
+              <!-- <a href="#" class="nav-link text-success active">Login/Register</a> -->
+              <div class="notification col dropdown" style="cursor: pointer;">
+                
+                <div class="position-relative pt-2 red dropdown-toggle" id="notification-dpdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa fa-bell pt-1"></i>
+                </div>
+                <ul class="dropdown-menu dropdown-menu-end notification-dropdown-menu notification-dropdown-menu" aria-labelledby="notification-dpdown">
+                  <li class="text-muted">Notifications - <span class="red">5</span></li>
+                  <hr>
+                  <ul class="nested-notifi-list">
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    <li class="d-flex dropdown-li"><img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="pe-1 me-1" width="45px"><a href="#" class=""><strong>Jhon Deo </strong>Donate His Blood to <strong>Killy Petty</strong></a></li>
+                    
+                  </ul>
+                </ul>
+              </div>
+              <div class="dropdown col" style="cursor: pointer;">
+                <div class="dropdown-toggle" id="profile-dpdown" data-bs-toggle="dropdown" aria-expanded="false">
+                  <img src="assets/images/logo/blood-oyala-logo2.png" alt="Avatar" class="rounded-circle" width="50">
+                  <span class="">Blood Oyala</span>
+                </div>
+                <ul class="dropdown-menu bg dropdown-menu-end col-12" aria-labelledby="profile-dpdown">
+                  <li><a class="dropdown-item p-3 text-muted" href="#"><span class="p-2"><i class="fa fa-user"></i></span> My Profile</a></li>
+                  <li><a class="dropdown-item p-3 text-muted" href="#"><span class="p-2"><i class="fa fa-credit-card"></i></span> Payments</a></li>
+                  <li><a class="dropdown-item p-3 text-muted" href="#"><span class="p-2"><i class="fa fa-support"></i></span> Support Team</a></li>
+                  <li><a class="dropdown-item p-3 text-muted" href="#"><span class="p-2"><i class="fa fa-gear"></i></span> Settings</a></li>
+                  <li><a class="dropdown-item p-3 text-muted" href="#"><span class="p-2"><i class="fa fa-share"></i></span> Share</a></li>
+                  <li><a class="dropdown-item p-3 text-danger" href="#"><span class="p-2"><i class="fa fa-sign-out"></i></span> Logout</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="logo-bg bg-red"></div>
+  </section>
+
+
+    <!------- main nav bar end  ------>
+
+
+    <section class="">
+      <div class="brequest">
+        <div class="d-lg-none d-md-none d-block p-4 post-top"></div>
+        <div class="search-filter mt-5">
+          <h1 class="text-center pt-5 title">Blood For Life</h1>
+          <h5 class="text-center pt-3 top-subtitle livvic-reg">Blood Request Near You</h5>
+          <form action="" class="pt-5 pb-5">
+            <div class="row justify-content-center">
+              <!--Division Section-->
+              <div class="col-lg-5 col-md-8 col-8 m-2">
+                  <!-- <label for="divisions" class="form-label text-light">Select Division</label> -->
+                  <select name="divisions" id="divisions" class="form-select col-8" onchange="divisionsList();">
+                        <option disabled selected>Select Division</option>
+                        <option value="Barishal">Barishal</option>
+                        <option value="Chattogram">Chattogram</option>
+                        <option value="Dhaka">Dhaka</option>
+                        <option value="Khulna">Khulna</option>
+                        <option value="Mymensingh">Mymensingh</option>
+                        <option value="Rajshahi">Rajshahi</option>
+                        <option value="Rangpur">Rangpur</option>
+                        <option value="Sylhet">Sylhet</option>
+                  </select>
+              </div>
+              <!--/ Division Section-->
+              <!--Districts Section-->
+              <div class="col-lg-5 col-md-8 col-8 m-2">
+                    <!-- <label for="distr">Select District</label> -->
+                  <select name="" id="distr" onchange="thanaList();" class="form-select col-6 col-md-10 col-lg-6">
+                    <option value="">Select An Option</option>
+                  </select><!--/ Districts Section-->
+              </div>
+              <!--Upzilla Section-->
+              <div class="col-lg-5 col-md-8 col-8 m-2">
+                  <!-- <label for="polic_sta">Select Police Station</label> -->
+                  <select name="" id="polic_sta" class="form-select col-12 col-md-10 col-lg-6">
+                    <option value="">Select An Option</option>
+                  </select>
+              </div>
+              <!--/ Upzilla Section-->
+              <div class="col-lg-5 col-md-8 col-8 m-2">
+                  <select class="form-select col-12 col-md-10 col-lg-6">
+                      <!-- <option value="">Select Blood Group</option> -->
+                      <option value="A+">A+</option>
+                      <option value="A-">A-</option>
+                      <option value="B+">B+</option>
+                      <option value="B-">B-</option>
+                      <option value="O+">O+</option>
+                      <option value="O-">O-</option>
+                      <option value="AB+">AB+</option>
+                      <option value="AB-">AB-</option>
+                    </select>
+              </div>
+              <button class="button white bg-red p-3 m-4 col-lg-2 col-md-3 col-4" type="submit"><i class="fas fa-search"></i> অনুরোধ করুন </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section id="requests">
+      <div class="container">
+        <h1 class="title pt-3 pb-3">Find the Current blood request near you</h1>
+        <table id="current-request" class="table m-auto table-striped table-sm table-bordered table-hover table-responsive">
+          <thead class="thead-default">
+              <tr>
+                  <th>SL</th>
+                  <th>Name</th>
+                  <th>Address</th>
+                  <th>Request Time</th>
+                  <th>Blood</th>
+                  <th>Contact</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>1</td>
+                  <td>Jhon Mart</td>
+                  <td>Sadar, Rangpur, Rangpur</td>
+                  <td>5 hour ago</td>
+                  <td>O+</td>
+                  <td>
+                    <a href="#" class="btn">+8801253525252</a>
+                    <a href="#" class="btn btn-info">Message</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td>2</td>
+                  <td>Kelin Kim</td>
+                  <td>Pirganj, Thakurgaon, Rangpur</td>
+                  <td>5 hour ago</td>
+                  <td>O+</td>
+                  <td>
+                    <a href="#" class="btn">+8801253525252</a>
+                    <a href="#" class="btn btn-info">Message</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td>3</td>
+                  <td>Martin Deo</td>
+                  <td>Sadar, Rajshahi, Rajshahi</td>
+                  <td>4 hour ago</td>
+                  <td>O+</td>
+                  <td>
+                    <a href="#" class="btn">+8801253525252</a>
+                    <a href="#" class="btn btn-info">Message</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td>4</td>
+                  <td>Shovo Roy</td>
+                  <td>Sadar, Potuyakhali, Barisal</td>
+                  <td>3 hour ago</td>
+                  <td>O+</td>
+                  <td>
+                    <a href="#" class="btn">+8801253525252</a>
+                    <a href="#" class="btn btn-info">Message</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td>5</td>
+                  <td>Liton Ahamed</td>
+                  <td>Tejgaon, Dhaka, Dhaka</td>
+                  <td>3 hour ago</td>
+                  <td>O+</td>
+                  <td>
+                    <a href="#" class="btn">+8801253525252</a>
+                    <a href="#" class="btn btn-info">Message</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td>6</td>
+                  <td>Saad Ahamed</td>
+                  <td>Savar, Gajipur, Dhaka</td>
+                  <td>2 Hour Ago</td>
+                  <td>O+</td>
+                  <td>
+                    <a href="#" class="btn">+8801253525252</a>
+                    <a href="#" class="btn btn-info">Message</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td>7</td>
+                  <td>Rahim Islam</td>
+                  <td>Sadar, Jaypurhat, Rajshahi</td>
+                  <td>1 hour ago</td>
+                  <td>O+</td>
+                  <td>
+                    <a href="#" class="btn">+8801253525252</a>
+                    <a href="#" class="btn btn-info">Message</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td>8</td>
+                  <td>Karim</td>
+                  <td>Sadar, Naraynganj, Dhaka</td>
+                  <td>50 Minutes ago</td>
+                  <td>O+</td>
+                  <td>
+                    <a href="#" class="btn">+8801253525252</a>
+                    <a href="#" class="btn btn-info">Message</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td>9</td>
+                  <td>Martin Deo</td>
+                  <td>Sadar, Bagerhat, Khulna</td>
+                  <td>30 minutes ago</td>
+                  <td>O+</td>
+                  <td>
+                    <a href="#" class="btn">+8801253525252</a>
+                    <a href="#" class="btn btn-info">Message</a>
+                  </td>
+              </tr>
+              <tr>
+                  <td>10</td>
+                  <td>Martin Deo</td>
+                  <td>Sadar, Sunamganj, Shylet</td>
+                  <td>10 minutes ago</td>
+                  <td>O+</td>
+                  <td>
+                    <a href="#" class="btn">+8801253525252</a>
+                    <a href="#" class="btn btn-info">Message</a>
+                  </td>
+              </tr>
+
+          </tbody>
+      </table>
+    <!-- donor list section end  -->
+
+      </div>
+    </section>
+
+    <!-- footer section start  -->
+    <footer class="footer" id="footer">
+      <div class="opacity pt-5">
+        <div class="container">
+          <div class="row pb-4">
+            <div class="col-lg-4 col-md-6 col-12 pt-5 f-about-us">
+              <h3>About Us</h3>
+              <p class="des">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt repellat neque consequatur laborum dolor dolores molestiae qui consequuntur reiciendis rem!
+              </p>
+              <div class="contact-info">
+                <span><b>Phone:</b> +880-13101-86926</span>
+                <span class="d-block"><b>Email:</b>  bloodoyala@gmail.com</span>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 pt-5 f-quick-link">
+              <h3>Quick Links</h3>
+              <div class="tag-list">
+                <div class="row col-lg-10 col-md-12">
+                  <div class="col-10">
+                    <a href="#" class="row tag text-decoration-none font-sm-f">
+                      <div class="col-2 red icon-double-arrow"><i class="fa fa-angle-double-right"></i></div>
+                      <div class="col-9 black bold">News Feed</div>
+                    </a>
+                    <a href="#" class="row tag text-decoration-none font-sm-f">
+                      <div class="col-2 red icon-double-arrow"><i class="fa fa-angle-double-right"></i></div>
+                      <div class="col-9 black bold">Groups</div>
+                    </a>
+                    <a href="#" class="row tag text-decoration-none font-sm-f">
+                      <div class="col-2 red icon-double-arrow"><i class="fa fa-angle-double-right"></i></div>
+                      <div class="col-9 black bold">Donor List</div>
+                    </a>
+                    <a href="#" class="row tag text-decoration-none font-sm-f">
+                      <div class="col-2 red icon-double-arrow"><i class="fa fa-angle-double-right"></i></div>
+                      <div class="col-9 black bold">Blood Request</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 pt-5 f-quick-link">
+              <h3>Our Services</h3>
+              <div class="tag-list">
+                <div class="row col-lg-10 col-md-12">
+                  <div class="col-10">
+                    <a href="#" class="row tag text-decoration-none font-sm-f">
+                      <div class="col-2 red icon-double-arrow"><i class="fa fa-angle-double-right"></i></div>
+                      <div class="col-9 black bold">Good Service</div>
+                    </a>
+                    <a href="#" class="row tag text-decoration-none font-sm-f">
+                      <div class="col-2 red icon-double-arrow"><i class="fa fa-angle-double-right"></i></div>
+                      <div class="col-9 black bold">Help People</div>
+                    </a>
+                    <a href="#" class="row tag text-decoration-none font-sm-f">
+                      <div class="col-2 red icon-double-arrow"><i class="fa fa-angle-double-right"></i></div>
+                      <div class="col-9 black bold">Hygine Tools</div>
+                    </a>
+                    <a href="#" class="row tag text-decoration-none font-sm-f">
+                      <div class="col-2 red icon-double-arrow"><i class="fa fa-angle-double-right"></i></div>
+                      <div class="col-9 black bold">24h Service</div>
+                    </a>
+                    <a href="#" class="row tag text-decoration-none font-sm-f">
+                      <div class="col-2 red icon-double-arrow"><i class="fa fa-angle-double-right"></i></div>
+                      <div class="col-9 black bold">Health Check</div>
+                    </a>
+                    <a href="#" class="row tag text-decoration-none font-sm-f">
+                      <div class="col-2 red icon-double-arrow"><i class="fa fa-angle-double-right"></i></div>
+                      <div class="col-9 black bold">Blood Bank</div>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row pb-5 border border-secondary border-bottom-0 border-end-0 border-start-0">
+            <div class="col-lg-6 col-md-6 col-12 pt-4 subscribe">
+              <h3 class="title">Subscribe us for more update & news !!</h3>
+              <form action="" class="form-group">
+                <input type="text" class="p-3 border-0 shadow" placeholder="Enter Your Email">
+                <button class="button p-3 bg-red white">Subscribe Now</button>
+              </form>
+            </div>
+            <div class="col-lg-6 col-md-6 col-12 pt-4 mt-3 social-follow ms-auto text-end">
+              <div class="social-btn">
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-pinterest"></i></a>
+              </div>
+              <br>
+              <a href="#" class="text-decoration-none black">Privacy Policy</a> / <a href="#" class="text-decoration-none black">Term & Condition</a> / <a href="#" class="text-decoration-none black">FAQ</a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright p-4 text-center bg-black white livvic-reg">Copyright &copy; 2022 Blood Oyala. All Right Reversed.</div>
+      </div>
+    </footer>
+    <!-- footer section end  -->
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/4e207534e4.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.12.0/js/jquery.dataTables.js"></script>
+    <script src="assets/js/city.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script>
+      $(document).ready( function () {
+    $('#current-request').DataTable();
+} );
+
+    </script>
+
+  </body>
+</html>
+
+
+
+<!-- main nav bar end  -->
     <section class="register-2">
 
       <!-- signup section start  -->
-      <section class="">
-        <div class="col-lg-9 col-md-10 col-11 m-auto pt-5">
-          <div class="card card-signup">
-
-            <div class="row">
-              <div class="col-lg-4 col-md-4 col-12 d-none d-lg-block d-md-block m-auto text-center">
-                <!-- <img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="col-10"> -->
-                <div class="row p-3">
-                  <div class="col-lg-2 col-md-2">
-                    <div class="login-bulate text-light">
-                      <i class="fas fa-arrow-right"></i>
+      <div class="container">
+        <div class="col-lg-9 col-md-11 col-12 m-auto pt-5">
+          <div class="card shadow bg">
+            <div class="card-header text-center pt-5">
+              <img src="assets/images/logo/blood-oyala-logo2.png" alt="" width="100">
+              <h1 class="bold pt-4 title">Registration Form</h1>
+              <h5 class="top-subtitle livvic-reg">Please Provide your information here</h5>
+            </div>
+            <div class="card-body">
+              <form class="validate-form">
+                <div class="row">
+                  <div class="mb-3 col-lg-6 col-md-6 col-12">
+                    <label for="exampleInputEmail1" class="form-label">First Name</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text bg-info white" id="fname"><i class="fa fa-user"></i></span>
+                      <input type="text" class="form-control" name="fname" placeholder="Enter your First Name">
                     </div>
                   </div>
-                  <div class="col-lg-9 col-md-9">
-                    <h6 class="text-light text-start ps-2">
-                      First Login Or SignUp Your account
-                    </h6>
-                  </div>
-                </div>
-                <div class="row p-3">
-                  <div class="col-lg-2 col-md-2">
-                    <div class="login-bulate text-light">
-                      <i class="fas fa-arrow-right"></i>
+                  <div class="mb-3 col-lg-6 col-md-6 col-12">
+                    <label for="exampleInputEmail1" class="form-label">Last Name</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text bg-info white" id="lname"><i class="fa fa-user"></i></span>
+                      <input type="text" class="form-control" name="lname" placeholder="Enter your Last Name">
                     </div>
                   </div>
-                  <div class="col-lg-9 col-md-9">
-                    <h6 class="text-light text-start ps-2">
-                      First Login Or SignUp Your account
-                    </h6>
-                  </div>
-                </div>
-                <div class="row p-3">
-                  <div class="col-lg-2 col-md-2">
-                    <div class="login-bulate text-light">
-                      <i class="fas fa-arrow-right"></i>
+                  <div class="mb-3 col-lg-6 col-md-6 col-12">
+                    <label for="exampleInputEmail1" class="form-label">Date of Birth</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text bg-info white" id="lname"><i class="fa fa-calendar"></i></span>
+                      <input type="date" id="birthday" class="form-control" name="dob" placeholder="Date of Birth" value="">
                     </div>
                   </div>
-                  <div class="col-lg-9 col-md-9">
-                    <h6 class="text-light text-start ps-2">
-                      First Login Or SignUp Your account
-                    </h6>
-                  </div>
-                </div>
-                <div class="row p-3">
-                  <div class="col-lg-2 col-md-2">
-                    <div class="login-bulate text-light">
-                      <i class="fas fa-arrow-right"></i>
+                  <div class="mb-3 col-lg-6 col-md-6 col-12">
+                    <label for="exampleInputEmail1" class="form-label">Gander</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text bg-info white" id="lname"><i class="fa fa-transgender-alt"></i></span>
+                      <select name="gander" id="" class="form-select">
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                      </select>
                     </div>
                   </div>
-                  <div class="col-lg-9 col-md-9">
-                    <h6 class="text-light text-start ps-2">
-                      First Login Or SignUp Your account
-                    </h6>
-                  </div>
-                </div>
-                <div class="row p-3">
-                  <div class="col-lg-2 col-md-2">
-                    <div class="login-bulate text-light">
-                      <i class="fas fa-arrow-right"></i>
-                    </div>
-                  </div>
-                  <div class="col-lg-9 col-md-9">
-                    <h6 class="text-light text-start ps-2">
-                      First Login Or SignUp Your account
-                    </h6>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-8 col-md-8 col-12">
-                <div class="col-lg-4 col-md-4 col-12 d-lg-none d-md-none d-block m-auto text-center p-4">
-                  <img src="assets/images/logo/blood-oyala-logo2.png" alt="" class="col-10"  style="max-width: 150px;">
-                </div>
-                <h2 class="card-title text-center text-light p-4">Register</h2>
-                  <div class="row">
-                    <div class="col-md-12">
-                        <div class="social text-center">
-                            <button class="btn btn-just-icon btn-round btn-twitter">
-                                <i class="fa fa-twitter"></i>
-                            </button>
-                            <button class="btn btn-just-icon btn-round btn-dribbble">
-                                <i class="fa fa-google"></i>
-                            </button>
-                            <button class="btn btn-just-icon btn-round btn-facebook">
-                                <i class="fa fa-facebook"> </i>
-                            </button>
+                  <div class="mb-3 col-lg-6 col-md-6 col-12">
+                    <label for="exampleInputEmail1" class="form-label">Phone Number</label>
+                    <div class="row">
+                      <div class="col-5">
+                        <div class="input-group mb-3">
+                          <span class="input-group-text bg-info white" id="phone"><i class="fa fa-phone"></i></span>
+                          <input type="text" value="+880" class="form-control" name="code" disabled>
                         </div>
+                      </div>
+                      <div class="col-7">
+                        <div class="input-group mb-3">
+                          <input type="number" class="form-control" name="phone" placeholder="ex: 1310*********" style="border: 1px solid black;">
+                        </div>
+                      </div>
                     </div>
+                  </div>
+                  <div class="mb-3 col-lg-6 col-md-6 col-12">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text bg-info white" id="lname"><i class="fa fa-envelope"></i></span>
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Your Full Email Address">
+                      <div id="emailHelp" class="form-text d-none">We'll never share your email with anyone else.</div>
+                    </div>
+                  </div>
+                  <div class="mb-3 col-lg-6 col-md-6 col-12">
+                    <label for="exampleInputEmail1" class="form-label">Password</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text bg-info white"><i class="fa fa-key"></i></span>
+                      <input type="password" class="form-control" name="password" placeholder="Enter your Password" id="password" onkeyup="check();">
+                      <span class="input-group-text bg-info white" onclick="password()"><i class="fa fa-eye"></i></span>
+                    </div>
+                  </div>
+                  <div class="mb-3 col-lg-6 col-md-6 col-12">
+                    <label for="exampleInputEmail1" class="form-label">Confirm Password</label>
+                    <div class="input-group mb-3">
+                      <span class="input-group-text bg-info white"><i class="fa fa-key"></i></span>
+                      <input type="password" class="form-control" name="cpassword" placeholder="Repeat your Password" id="cpassword" aria-describedby="message" onkeyup="check();">
+                      <span class="input-group-text bg-info white" onclick="cpassword()"><i class="fa fa-eye"></i></span>
+                    </div>
+                    <div id="message" class="form-text d-block"></div>
+                  </div>
+                  <div class="mb-3 col-lg-6 col-md-6 col-12">
+                    <label for="exampleInputEmail1" class="form-label">Select Division</label>
+                    <div class="input-group">
+                      <span class="input-group-text bg-info white" id="lname"><i class="fa fa-map"></i></span>
+                      <select name="divisions" id="divisions" class="form-select" onchange="divisionsList();">
+                          <option disabled selected>Select Division</option>
+                          <option value="Barishal">Barishal</option>
+                          <option value="Chattogram">Chattogram</option>
+                          <option value="Dhaka">Dhaka</option>
+                          <option value="Khulna">Khulna</option>
+                          <option value="Mymensingh">Mymensingh</option>
+                          <option value="Rajshahi">Rajshahi</option>
+                          <option value="Rangpur">Rangpur</option>
+                          <option value="Sylhet">Sylhet</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="mb-3 col-lg-6 col-md-6 col-12">
+                    <label for="exampleInputEmail1" class="form-label">Select District</label>
+                       <div class="input-group">
+                          <!-- <label for="distr">Select District</label> -->
+                          <span class="input-group-text bg-info white" id="lname"><i class="fa fa-map-marker"></i></span>
+                          <select name="" id="distr" onchange="thanaList();" class="form-select col-6 col-md-10 col-lg-6">
+                            <option value="">Select An Option</option>
+                          </select><!--/ Districts Section-->
+                       </div>
+                  </div>
+                  <div class="mb-3 col-lg-6 col-md-6 col-12">
+                        <!-- <label for="polic_sta">Select Police Station</label> -->
+                    <label for="exampleInputEmail1" class="form-label">Select Thana</label>
+                      <div class="input-group">
+                        <span class="input-group-text bg-info white" id="lname"><i class="fa fa-location-arrow"></i></span>
+                        <select name="" id="polic_sta" class="form-select col-12 col-md-10 col-lg-6">
+                          <option value="">Select An Option</option>
+                        </select>
+                      </div>
+                  </div>
+                  <div class="mb-3 col-lg-6 col-md-6 col-12">
+                    <label for="exampleInputEmail1" class="form-label">Select Blood Group</label>
+                    <div class="input-group">
+
+                      <span class="input-group-text bg-info white" id="lname"><i class="fa fa-tint"></i></span>
+                      <select class="form-select col-12 col-md-10 col-lg-6">
+                        <!-- <option value="">Select Blood Group</option> -->
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="mb-3 col-lg-6 col-md-6 col-12">
+                    <label for="exampleInputEmail1" class="form-label">Did you ever donate blood before?</label>
+                    <div class="radio">
+                      <input type="radio" value="Yes" name="donated" id="donate-yes" onclick="donated_yes()">
+                      <label for="">Yes</label>
+                      <input type="radio" value="No" name="donated" id="donate-no" onclick="donated_no()">
+                      <label for="">No</label>
+                    </div>
+                    <div class="col-12" id="donate-date" style="display: none;">
+                      <div class="input-group mb-3">
+                        <span class="input-group-text bg-info white" id=""><i class="fa fa-calendar"></i></span>
+                        <input type="date" class="form-control" name="donated" id="donate" placeholder="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3 col-lg-6 col-md-6 col-12">
+                    <label for="exampleInputEmail1" class="form-label">Did you have any Disease?</label>
+                    <div class="radio">
+                      <input type="radio" value="Yes" name="disease">
+                      <label for="">Yes</label>
+                      <input type="radio" value="No" name="disease">
+                      <label for="">No</label>
+                    </div>
+                  </div>
+                  <div class="mb-3 col-lg-6 col-md-6 col-12" id="Disease">
+                    <label for="" class="form-label">Are you infected with HBsAg?</label>
+                      <div class="hiv">
+                        <input type="radio" value="yes" name="hbs">
+                        <label for="">Yes</label>
+                        <input type="radio" value="no" name="hbs">
+                        <label for="">No</label>
+                      </div>
+                  </div>
+                  <div class="mb-3 col-lg-6 col-md-6 col-12">
+                    <label for="" class="form-label">Are you infected with HIV?</label>
+                    <div class="hiv">
+                      <input type="radio" value="yes" name="hiv" id="">
+                      <label for="">Yes</label>
+                      <input type="radio" value="no" name="hiv">
+                      <label for="">No</label>
+                    </div>
+                  </div>
+                  <div class="mb-3 col-lg-6 col-md-6 col-12">
+                    <label for="exampleInputEmail1" class="form-label">Add Your Photo Here</label>
+                    <input type="file" class="form-control">
+                  </div>
+
                 </div>
-                <form action="">
-                  <div class="d-flex m-4">
-                    <span class="icon">
-                      <i class="fas fa-smile"></i>
-                    </span>
-                    <div class="register-input-field">
-                      <input type="text" name="name" id="name" required autocomplete="off">
-                      <label for="name" class="label-name">
-                        <span class="content-name">Your Name</span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="d-flex m-4">
-                    <span class="icon">
-                      <i class="fas fa-home"></i>
-                    </span>
-                    <div class="register-input-field">
-                      <input type="text" name="address" id="address" required autocomplete="off">
-                      <label for="address" class="label-name">
-                        <span class="content-name">Your Address</span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="d-flex m-4">
-                    <span class="icon">
-                      <i class="fas fa-phone"></i>
-                    </span>
-                    <div class="register-input-field">
-                      <input type="text" name="phone" id="phone" required autocomplete="off">
-                      <label for="phone" class="label-name">
-                        <span class="content-name">Your Phone Number</span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="d-flex m-4">
-                    <span class="icon">
-                      <i class="fas fa-envelope"></i>
-                    </span>
-                    <div class="register-input-field">
-                      <input type="email" name="email" id="email" required autocomplete="off">
-                      <label for="phone" class="label-name">
-                        <span class="content-name">Your Email Address</span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="d-flex m-4">
-                    <span class="icon">
-                      <i class="fas fa-lock"></i>
-                    </span>
-                    <div class="register-input-field">
-                      <input type="password" name="password" id="password" required autocomplete="off">
-                      <label for="password" class="label-name">
-                        <span class="content-name">Password</span>
-                      </label>
-                    </div>
-                  </div>
-                  <div class="checkbox m-4 ps-3 text-light">
-                    <label>
-                        <input type="checkbox" name="" data-bs-toggle="modal" id="terms" data-bs-target="#modelId"><span class="checkbox-material"><span class="check"></span></span> I agree to the
-                        <a href="#something">terms and conditions</a>.
-                    </label>
-                  </div>
 
-                  <div class="p-4 m-auto text-center">
-                    <button class="btn btn-success" id="register" disabled>Register</button>
-                  </div>
-                  <div class="p-4 m-auto text-center">
-                    <a href="login.html" class="btn btn-sm btn-info">Already I have an Account</a>
-                  </div>
-                </form>
-
+                <div class="checkbox p-3 text-center">
+                  <label>
+                      <input type="checkbox" name="" data-bs-toggle="modal" id="terms" data-bs-target="#termc" onclick="modaloff()"><span class="checkbox-material"><span class="check"></span></span> I agree to the
+                      <a href="#something">terms and conditions</a>.
+                  </label>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-success" id="register" disabled>Submit</button>
+                </div>
+              </form>
+              <div class="text-center p-4">
+                <a href="#" class="btn btn-light shadow"><img src="assets/images/logo/Google__G__Logo.svg.png" alt="" width="20"> SignUp With Google</a>
+              </div>
+              <div class="text-center p-4">
+                <a href="login.html" class="text-decoration-none">Already I have and Account</a>
               </div>
             </div>
+          </div>
         </div>
-
-        </div>
-      </section>
+      </div>
       <br><br>
+
       <!-- signup section end  -->
       <!-- terms and conditions modal  -->
       <!-- Modal -->
-      <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+      <div class="modal fade" id="termc" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
               <div class="modal-header">
@@ -199,7 +748,7 @@
               <div class="container-fluid">
                 সারা বাংলাদেশে প্রতিদিনই সব ধরনের রক্তের গ্রুপের জরুরি প্রয়োজন রয়েছে। বিশেষ করে ও নেগেটিভ, বি নেগেটিভ এবং এ নেগেটিভের মতো বিরল রক্তের গ্রুপের দাতাদের চাহিদা বেশি। আমরা যে বিশাল দৈনিক চাহিদার মুখোমুখি হচ্ছি তার জন্য সুস্থ রক্ত সরবরাহের জন্য আপনার সময়মত প্রতিক্রিয়া অপরিহার্য।
 
-    আপনার দান অনেকের জীবন বাঁচাতে পারে, একটি পার্থক্য আনতে পারে বা মানবতার প্রতি আপনার অবদান সম্পর্কে আপনাকে দুর্দান্ত অনুভব করতে পারে। আপনার কারণ যাই হোক না কেন, আপনার অনুপ্রেরণা যাই হোক না কেন আমরা আপনাকে আমাদের মতো বিশ্বস্ত সংস্থার সাথে রক্তদানের যোগ্যতা এবং সুবিধা সম্পর্কে আরও জানতে স্বাগত জানাই।
+        আপনার দান অনেকের জীবন বাঁচাতে পারে, একটি পার্থক্য আনতে পারে বা মানবতার প্রতি আপনার অবদান সম্পর্কে আপনাকে দুর্দান্ত অনুভব করতে পারে। আপনার কারণ যাই হোক না কেন, আপনার অনুপ্রেরণা যাই হোক না কেন আমরা আপনাকে আমাদের মতো বিশ্বস্ত সংস্থার সাথে রক্তদানের যোগ্যতা এবং সুবিধা সম্পর্কে আরও জানতে স্বাগত জানাই।
               </div>
             </div>
             <div class="modal-footer">
@@ -212,6 +761,11 @@
 
     </section>
 
+    <!-- footer section start  -->
+<footer class="footer" id="footer">
+  <div class="copyright p-4 text-center bg-black white livvic-reg">Copyright &copy; 2022 Blood Oyala. All Right Reversed.</div>
+</footer>
+<!-- footer section end  -->
 
 
 
@@ -221,14 +775,43 @@
     <script src="assets/js/city.js"></script>
     <script src="assets/js/main.js"></script>
     <script>
+      var donate_yes = document.getElementById('donate-yes');
+  var donate_date = document.getElementById('donate-date');
+
+  function donated_yes(){
+     if(donate_yes.checked==true){
+      donate_date.style.display= 'inline-block';
+     }
+  }
+  function donated_no(){
+     donate_date.style.display= 'none';
+  }
+  
+      var check = function() {
+        if (document.getElementById('password').value ==
+          document.getElementById('cpassword').value) {
+          document.getElementById('message').style.color = 'green';
+          document.getElementById('password').style.border = '2px solid green';
+          document.getElementById('cpassword').style.border = '2px solid green';
+          document.getElementById('message').innerHTML = 'Password Matching';
+        } else {
+          document.getElementById('message').style.color = 'red';
+          document.getElementById('password').style.border = '2px solid red';
+          document.getElementById('cpassword').style.border = '2px solid red';
+          document.getElementById('message').innerHTML = 'Password Not Matching';
+        }
+      }
        var checker = document.getElementById('terms');
+       var modal = document.getElementById('termc');
         var sendbtn = document.getElementById('register');
         // when unchecked or checked, run the function
         checker.onchange = function(){
         if(this.checked){
             sendbtn.disabled = false;
+            sendbtn.classList = "btn btn-success";
         } else {
             sendbtn.disabled = true;
+            sendbtn.classList = "btn btn-danger";
         }
 
         }
